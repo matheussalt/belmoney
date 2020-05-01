@@ -1,9 +1,17 @@
+$blue: #1250b3;
+$lightBlue: #37a4d6;
+$darkBlue: #002740;
+$veryDarkBlue: #00223f;
+$lightGrey: #f2f5f7;
+$black: #131617;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul,
@@ -14,6 +22,29 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.btn-cta {
+  padding: 8px 32px;
+  display: inline-block;
+  background-color: $lightBlue;
+  border-radius: 32px;
+  border: 2px solid $lightBlue;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s background-color, 0.3s color;
+  transition-timing-function: ease-out;
+
+  &:hover {
+    background-color: #fff;
+    color: $lightBlue;
+  }
 }
 
 @import './scss/header/header';

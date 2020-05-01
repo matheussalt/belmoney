@@ -26,7 +26,10 @@
 
   <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-  <link rel="icon" type="image/png" href="<?=get_template_directory_URI()?>/img/favicon.png" />
+  <link rel="icon" type="image/png" href="<?=get_template_directory_URI()?>/img/src/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="<?=get_template_directory_URI()?>/style.css" />
+
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -49,7 +52,34 @@
   </script>
 
   <header class="header">
-    <div>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-    </div>
+    <nav>
+      <a href="<?=site_url()?>" class="logo-header">
+        <img src="<?=get_template_directory_URI()?>/img/src/logo.svg" alt="Logotipo Belmoney" />
+      </a>
+
+      <div class="header-wrapper">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+
+        <a href="#" class="btn-cta">
+          <span>JUNTE-SE A NÓS</span>
+        </a>
+      </div>
+
+      <div class="header-buttons">
+        <div class="choose-language">
+          <span class="current">PT <img src="<?=get_template_directory_URI()?>/img/src/dropdown.svg" /></span>
+
+          <ul>
+            <li><a href="<?=site_url()?>/">EN</a></li>
+            <li><a href="<?=site_url()?>/pt">PT</a></li>
+            <li><a href="<?=site_url()?>/es">ES</a></li>
+            <li><a href="<?=site_url()?>/fr">FR</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-hamb">
+          <span></span>
+        </div>
+      </div>
+    </nav>
   </header>
