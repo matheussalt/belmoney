@@ -43,6 +43,7 @@
   padding: 4px;
   background-color: transparent;
   border: none;
+  z-index: 9;
 
   &::before,
   &::after {

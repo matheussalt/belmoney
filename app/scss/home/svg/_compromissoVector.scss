@@ -1,0 +1,274 @@
+#protection-guys {
+  #clouds {
+    animation: protectionClouds 40s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #digital {
+    opacity: 0;
+    animation: protectionDigital 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #authorized {
+    opacity: 0;
+    animation: protectionAuthorized 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #locked {
+    animation: protectionLocked 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #credit_card {
+    overflow: hidden;
+  }
+
+  #reflex {
+    transform: translate3d(-10%, 0, 0);
+    animation: protectionReflex 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #leaf_dark {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+  }
+
+  #leaf_light1 {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: right;
+    transform-box: fill-box;
+  }
+
+  #leaf_light2 {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+  }
+
+  #phone_hand {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 100% 80%;
+    transform-box: fill-box;
+  }
+
+  #men_head {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 20% 100%;
+    transform-box: fill-box;
+  }
+}
+
+#world-guys {
+  #world_clouds {
+    animation: protectionClouds 40s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #leaf_dark1 {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: right;
+    transform-box: fill-box;
+  }
+
+  #leaf_dark2 {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+
+  #leaf_light {
+    animation: protectionLeaf 60s ease infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+
+  #world {
+    animation: worldWorld 480s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #world_shadow {
+    animation: worldShadow 480s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #woman_head {
+    animation: worldWomanHead 10s linear infinite;
+    transform-origin: 35% 100%;
+    transform-box: fill-box;
+  }
+
+  #man_head {
+    animation: worldWomanHead 10s linear infinite;
+    transform-origin: 35% 100%;
+    transform-box: fill-box;
+  }
+
+  #woman_foot1 {
+    animation: protectionPhoneHand 10s linear infinite;
+    transform-origin: 80% 0%;
+    transform-box: fill-box;
+  }
+
+  #woman_foot2 {
+    animation: protectionPhoneHand 10s linear infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes protectionClouds {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(15%, 0, 0);
+  }
+}
+
+@keyframes protectionDigital {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes protectionReflex {
+  0%,
+  100% {
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(35%, 0, 0);
+  }
+}
+
+@keyframes protectionAuthorized {
+  0%,
+  10%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+  }
+}
+
+@keyframes protectionLocked {
+  0%,
+  100% {
+    transform: translate3d(0, -15%, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes protectionLeaf {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-7deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  40% {
+    transform: rotate(-7deg);
+  }
+
+  70% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes protectionPhoneHand {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes worldWorld {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes worldShadow {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes worldWomanHead {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(-8deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  80% {
+    transform: rotate(-7deg);
+  }
+}

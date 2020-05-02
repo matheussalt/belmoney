@@ -1,0 +1,29 @@
+#equipe-guys {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #woman_arm {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 10% 0%;
+    transform-box: fill-box;
+  }
+
+  #woman_arm_2 {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 100% 40%;
+    transform-box: fill-box;
+  }
+
+  #man_arm {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 20% 100%;
+    transform-box: fill-box;
+  }
+
+  #man_arm_2 {
+    animation: protectionPhoneHand 10s ease infinite;
+    transform-origin: 90% 0%;
+    transform-box: fill-box;
+  }
+}

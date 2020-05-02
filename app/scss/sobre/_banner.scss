@@ -1,0 +1,43 @@
+.sobre-banner {
+  position: relative;
+  background-color: $lightGrey;
+  height: calc(100vh - 64px);
+  min-height: 620px;
+  z-index: 1;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      color: $blue;
+      font-size: 9vw;
+      line-height: 9.5vw;
+      font-weight: bold;
+    }
+
+    p {
+      font-weight: lighter;
+    }
+  }
+
+  .circle1,
+  .circle2,
+  .circle3 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $lightBlue;
+    z-index: -1;
+  }
+
+  .circle1 {
+    bottom: 0;
+    left: -20vw;
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@import './svg/bannerVector';

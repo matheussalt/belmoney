@@ -1,0 +1,91 @@
+#notebook-guys-vector {
+  width: 100%;
+  height: auto;
+
+  #line1 {
+    animation: comoLine 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #line2 {
+    animation: comoLine 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #woman-leg {
+    animation: comoWomanleg 10s ease infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+  }
+
+  #man-arm {
+    animation: comoArms 10s ease infinite;
+    transform-origin: 10% 0;
+    transform-box: fill-box;
+  }
+
+  #woman-arm {
+    animation: comoArms 10s ease infinite;
+    transform-origin: right;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes comoLine {
+  0% {
+    transform: scaleX(0);
+  }
+
+  60%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes comoWomanleg {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-3deg);
+  }
+
+  30% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes comoArms {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-3deg);
+  }
+
+  30% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}

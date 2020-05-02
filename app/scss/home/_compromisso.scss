@@ -1,0 +1,36 @@
+.compromisso {
+  width: 100%;
+  background-color: $lightGrey;
+  padding: 128px 0 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.compromisso-txt {
+  position: relative;
+  @extend %beforeVector;
+
+  p {
+    margin: 0;
+    color: $black;
+  }
+}
+
+.compromisso-img {
+  margin: 32px 0 64px;
+
+  &:nth-of-type(3) {
+    order: 4;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@import './svg/compromissoVector';

@@ -1,0 +1,33 @@
+.economia {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.economia-txt {
+  max-width: 600px;
+  text-align: center;
+
+  p {
+    line-height: 1.8rem;
+  }
+}
+
+.economia-img {
+  width: 100%;
+  max-width: 860px;
+
+  svg {
+    overflow: visible;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@import './svg/economiaVector';

@@ -1,0 +1,15 @@
+.equipe {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $lightGrey;
+
+  .container h2 {
+    position: relative;
+    margin-bottom: 64px;
+    color: $blue;
+    font-size: 48px;
+    font-weight: bold;
+
+    @extend %beforeVector;
+  }
+}

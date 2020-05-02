@@ -1,0 +1,21 @@
+.junte-se {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $lightGrey;
+
+  .container {
+    h2 {
+      color: $blue;
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 64px;
+      text-align: center;
+    }
+  }
+}
+
+@import './svg/junteseVector';

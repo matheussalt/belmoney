@@ -1,0 +1,88 @@
+#necessidade-compre #world {
+  animation: necessidadeWorld 5s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes necessidadeWorld {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+#necessidade-envio #globo {
+  animation: necessidadeGlobo 5s ease infinite;
+  transform-origin: 50% 45%;
+  transform-box: fill-box;
+}
+
+@keyframes necessidadeGlobo {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+#necessidade-pague #hand {
+  animation: necessidadeHand 5s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes necessidadeHand {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 16px, 0);
+  }
+}
+
+#necessidade-utilize {
+  #phone {
+    transform: translate3d(0, 10px, 0);
+    animation: necessidadePhone 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #euro {
+    animation: necessidadeEuro 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes necessidadePhone {
+  0%,
+  100% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes necessidadeEuro {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  30%,
+  70% {
+    transform: scale(1);
+  }
+}

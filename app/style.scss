@@ -14,6 +14,10 @@ $black: #131617;
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  font-size: 16px;
+}
+
 ul,
 ol,
 li {
@@ -22,6 +26,20 @@ li {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 1rem 0;
+  color: $black;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.05rem;
 }
 
 .container {
@@ -38,6 +56,7 @@ a {
   border: 2px solid $lightBlue;
   color: #fff;
   font-size: 14px;
+  text-transform: uppercase;
   transition: 0.3s background-color, 0.3s color;
   transition-timing-function: ease-out;
 
@@ -47,6 +66,24 @@ a {
   }
 }
 
+%beforeVector {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 64px;
+    height: 2px;
+    background-color: $lightBlue;
+  }
+}
+
+.empurra {
+  height: 64px;
+}
+
 @import './scss/header/header';
+@import './scss/home/index';
+@import './scss/sobre/index';
 @import './scss/footer/footer';
 @import './animation';

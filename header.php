@@ -35,6 +35,10 @@
 
   <?php wp_head(); ?>
 
+  <script>
+    var baseURL = '<?=site_url()?>';
+  </script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -58,7 +62,7 @@
       </a>
 
       <div class="header-wrapper">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'MenuTopo', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
 
         <a href="#" class="btn-cta">
           <span>JUNTE-SE A NÓS</span>
@@ -83,3 +87,5 @@
       </div>
     </nav>
   </header>
+
+  <div class="empurra"></div>

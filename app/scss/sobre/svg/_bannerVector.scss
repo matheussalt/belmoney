@@ -1,0 +1,78 @@
+#sobre-man {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #escudo {
+    animation: sobreEscudo 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #locked {
+    animation: protectionLocked 10s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #man_arm {
+    animation: sobreArm 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #shadow {
+    animation: sobreShadow 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes sobreEscudo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -2%, 0);
+  }
+}
+
+@keyframes sobreShadow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes sobreArm {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-3deg);
+  }
+
+  30% {
+    transform: rotate(-1deg);
+  }
+
+  40% {
+    transform: rotate(-3deg);
+  }
+
+  70% {
+    transform: rotate(1deg);
+  }
+
+  80% {
+    transform: rotate(3deg);
+  }
+}

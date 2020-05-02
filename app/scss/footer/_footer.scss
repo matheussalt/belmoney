@@ -1,0 +1,55 @@
+@import './newsletter';
+
+.footer {
+  width: 100%;
+  padding: 32px 0;
+  background-color: $veryDarkBlue;
+}
+
+.footer-header {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-footer {
+    width: 130px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+
+  a {
+    padding: 8px;
+    box-sizing: content-box;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+    }
+  }
+}
+
+#menu-sitemap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 280px;
+
+  li {
+    width: 50%;
+
+    a {
+      height: 35px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0.03rem;
+      text-transform: uppercase;
+    }
+  }
+}

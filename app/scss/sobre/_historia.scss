@@ -1,0 +1,37 @@
+.historia {
+  position: relative;
+  width: 100%;
+  padding: 0 0 64px;
+  background-color: $lightGrey;
+  z-index: 1;
+
+  .container {
+    padding: 32px 16px;
+    background-color: #fff;
+    z-index: 1;
+
+    h2 {
+      color: $black;
+    }
+
+    .square2 {
+      position: absolute;
+      bottom: 5%;
+      right: -10%;
+      width: 100%;
+      height: 65%;
+      background-color: $lightBlue;
+      z-index: -1;
+    }
+  }
+
+  .square1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 70%;
+    background-color: $blue;
+    z-index: -1;
+  }
+}

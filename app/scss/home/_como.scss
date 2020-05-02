@@ -1,0 +1,38 @@
+.como {
+  position: relative;
+  width: 100%;
+  padding: 64px 0;
+  background-color: $blue;
+  z-index: 1;
+  overflow-x: hidden;
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .como-wave-dark {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.como-txt {
+  position: relative;
+  margin-bottom: 32px;
+  color: #fff;
+  @extend %beforeVector;
+
+  p {
+    color: #fff;
+  }
+}
+
+.como-img {
+  width: 100%;
+}
+
+@import './svg/comoVector';

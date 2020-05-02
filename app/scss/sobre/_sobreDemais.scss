@@ -1,0 +1,28 @@
+.sobre-demais {
+  position: relative;
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fff;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.sobre-demais-item {
+  position: relative;
+  padding-top: 16px;
+
+  @extend %beforeVector;
+
+  h2 {
+    color: $blue;
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+}

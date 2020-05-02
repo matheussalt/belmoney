@@ -61,6 +61,17 @@
   </g>
 </svg>
 
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Grupo_11546" data-name="Grupo 11546" transform="translate(-2041 -61)">
+    <rect id="Retângulo_99" data-name="Retângulo 99" width="32" height="32" transform="translate(2041 61)"
+      fill="none" />
+    <g id="linkedin-logo" transform="translate(2045 56.442)">
+      <path id="LinkedIn"
+        d="M22.857,22.949V31.4h-4.9V23.515c0-1.981-.709-3.332-2.482-3.332a2.681,2.681,0,0,0-2.514,1.792,3.352,3.352,0,0,0-.163,1.194V31.4H7.9s.066-13.354,0-14.737h4.9v2.089c-.01.016-.023.032-.032.048H12.8v-.048a4.866,4.866,0,0,1,4.416-2.435C20.44,16.316,22.857,18.422,22.857,22.949ZM2.773,9.558a2.554,2.554,0,1,0-.065,5.093h.033a2.555,2.555,0,1,0,.032-5.093ZM.291,31.4h4.9V16.662H.291Z" />
+    </g>
+  </g>
+</svg>
+
 <svg id="mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"
   viewBox="0 0 32 32">
   <defs>

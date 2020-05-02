@@ -11,7 +11,8 @@ get_header(); ?>
 <?php if( have_rows('banner') ): ?>
 <?php while( have_rows('banner') ): the_row(); 
 
-$titulo = get_sub_field('titulo');
+$titulo_1 = get_sub_field('titulo_1');
+$titulo_2 = get_sub_field('titulo_2');
 $botao = get_sub_field('botao');
 $frase_1 = get_sub_field('frase_1');
 $frase_2 = get_sub_field('frase_2');
@@ -21,7 +22,7 @@ $frase_2 = get_sub_field('frase_2');
   <div class="container">
     <div class="banner-wrapper">
       <div class="banner-txt">
-        <h1><?=$titulo?></h1>
+        <h1><?=$titulo_1?> <strong><?=$titulo_2?></strong></h1>
         <a href="#" class="btn-cta">
           <span><?=$botao?></span>
         </a>

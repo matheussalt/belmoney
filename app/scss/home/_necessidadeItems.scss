@@ -1,0 +1,39 @@
+.necessidade-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  transform: translate3d(0, 64px, 0);
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    .necessidade-img {
+      height: 130px;
+      padding: 32px 16px 8px;
+      background-color: $lightGrey;
+
+      svg {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+      }
+    }
+
+    .necessidade-txt {
+      padding: 16px;
+      background-color: $blue;
+      flex: 1;
+
+      span {
+        display: block;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import './svg/necessidadeVector';
