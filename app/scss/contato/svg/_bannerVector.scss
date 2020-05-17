@@ -1,0 +1,163 @@
+#contact {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #engrenagem_1,
+  #hour {
+    animation: contactEngrenagem 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #engrenagem_2 {
+    animation: contactEngrenagem 30s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #call {
+    animation: contactCall 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+
+    circle {
+      animation: contactAnswer 10s ease infinite;
+      transform-origin: 50% 50%;
+      transform-box: fill-box;
+    }
+  }
+
+  #man {
+    animation: contactMan 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+
+  #man2 {
+    animation: contactMan 10s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+
+  #man_head,
+  #man_head2 {
+    animation: contactManHead 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+
+  #leafs_1 {
+    animation: contactManHead 30s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+
+  #leafs_2 {
+    animation: contactManHead 30s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+
+  #chat {
+    animation: contactChat 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes contactEngrenagem {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes contactCall {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes contactChat {
+  0%,
+  100% {
+    transform: translate3d(0, -10%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes contactAnswer {
+  0%,
+  10%,
+  90%,
+  100% {
+    fill: #f03e30;
+  }
+
+  20%,
+  80% {
+    fill: #25d366;
+  }
+}
+
+@keyframes contactMan {
+  0%,
+  100% {
+    transform: skewX(0);
+  }
+
+  20% {
+    transform: skewX(0.5deg);
+  }
+
+  40% {
+    transform: skewX(-0.5deg);
+  }
+
+  70% {
+    transform: skewX(0deg);
+  }
+
+  80% {
+    transform: skewX(-1deg);
+  }
+}
+
+@keyframes contactManHead {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(2deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}

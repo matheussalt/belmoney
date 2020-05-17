@@ -135,14 +135,27 @@ h4 {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    .header-wrapper ul li:last-of-type a {
+      padding: 8px 32px;
+      margin-top: 16px;
+      display: inline-block;
+      background-color: #37a4d6;
+      border-radius: 32px;
+      border: 2px solid #37a4d6;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: 0.3s background-color, 0.3s color;
+      transition-timing-function: ease-out; }
+      .header-wrapper ul li:last-of-type a:hover {
+        background-color: #fff;
+        color: #37a4d6; }
     .header-wrapper ul a {
       display: block;
       padding: 8px;
       text-align: center;
       color: #131617;
       text-transform: uppercase; }
-  .header-wrapper .btn-cta {
-    margin-top: 16px; }
 
 .menu-hamb {
   width: 32px;
@@ -1645,7 +1658,7 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     z-index: -1; }
 
 .banner-cobertura-txt {
@@ -1789,6 +1802,721 @@ h4 {
   .pais h4 {
     color: #131617;
     font-weight: normal; }
+
+.seguranca-banner {
+  position: relative;
+  width: 100%;
+  padding: 32px 0;
+  z-index: 1;
+  overflow-x: hidden; }
+  .seguranca-banner .banner-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    z-index: -1; }
+
+.banner-seguranca-txt {
+  margin-bottom: 32px; }
+  .banner-seguranca-txt h1 {
+    color: #1250b3;
+    font-size: 44px;
+    line-height: 50px; }
+
+.banner-seguranca-img {
+  width: 100%;
+  display: flex; }
+  .banner-seguranca-img svg {
+    width: 100%;
+    height: auto; }
+
+#seguranca {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #seguranca #escudo {
+    animation: segurancaEscudo 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #seguranca #check {
+    animation: segurancaCheck 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #seguranca #chat {
+    animation: segurancaChat 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+
+@keyframes segurancaEscudo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(0, 10%, 0); } }
+
+@keyframes segurancaCheck {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0); }
+  20%,
+  80% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes segurancaChat {
+  0%,
+  15%,
+  85%,
+  100% {
+    opacity: 0;
+    transform: translate3d(-2%, 0, 0); }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translate3d(-1%, 0, 0); }
+  40% {
+    transform: translate3d(2%, 0, 0); } }
+
+.seguranca-tecnologias {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #1250b3; }
+  .seguranca-tecnologias h2 {
+    margin-bottom: 32px;
+    color: #fff;
+    text-align: center; }
+
+.seguranca-tecnologias-wrapper {
+  display: grid;
+  gap: 32px; }
+
+.seguranca-tecnologia-item {
+  width: 100%; }
+  .seguranca-tecnologia-item img {
+    margin-bottom: 48px; }
+  .seguranca-tecnologia-item h4 {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px; }
+    .seguranca-tecnologia-item h4::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: #00c3ff; }
+  .seguranca-tecnologia-item p {
+    color: #fff; }
+
+.conformidade {
+  width: 100%;
+  padding: 64px 0 32px; }
+  .conformidade h2 {
+    color: #1250b3;
+    font-size: 46px; }
+  .conformidade h3 {
+    margin: 16px 0;
+    color: #131617;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px; }
+
+.politicas {
+  width: 100%;
+  padding: 32px 0 64px; }
+  .politicas h2 {
+    color: #1250b3;
+    font-size: 46px; }
+
+.politicas-wrapper {
+  margin: 32px 0; }
+
+.termo {
+  border-top: 1px solid #707070;
+  height: 102px;
+  overflow: hidden; }
+  .termo.ativo {
+    height: auto; }
+    .termo.ativo .termo-title img {
+      transform: rotate(90deg); }
+  .termo .termo-title {
+    width: 100%;
+    height: 102px;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer; }
+    .termo .termo-title img {
+      margin-right: 16px; }
+    .termo .termo-title h3 {
+      color: #131617; }
+
+.contato-banner {
+  width: 100%;
+  padding: 32px 0 64px; }
+
+.banner-contato-txt {
+  margin-bottom: 32px; }
+  .banner-contato-txt h1 {
+    color: #1250b3;
+    font-size: 44px;
+    line-height: 50px; }
+
+.banner-contato-img {
+  width: 100%;
+  display: flex; }
+  .banner-contato-img svg {
+    width: 100%;
+    height: auto; }
+
+#contact {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #contact #engrenagem_1,
+  #contact #hour {
+    animation: contactEngrenagem 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #contact #engrenagem_2 {
+    animation: contactEngrenagem 30s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #contact #call {
+    animation: contactCall 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+    #contact #call circle {
+      animation: contactAnswer 10s ease infinite;
+      transform-origin: 50% 50%;
+      transform-box: fill-box; }
+  #contact #man {
+    animation: contactMan 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #contact #man2 {
+    animation: contactMan 10s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #contact #man_head,
+  #contact #man_head2 {
+    animation: contactManHead 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #contact #leafs_1 {
+    animation: contactManHead 30s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #contact #leafs_2 {
+    animation: contactManHead 30s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #contact #chat {
+    animation: contactChat 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+
+@keyframes contactEngrenagem {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes contactCall {
+  0%,
+  100% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1); } }
+
+@keyframes contactChat {
+  0%,
+  100% {
+    transform: translate3d(0, -10%, 0); }
+  50% {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes contactAnswer {
+  0%,
+  10%,
+  90%,
+  100% {
+    fill: #f03e30; }
+  20%,
+  80% {
+    fill: #25d366; } }
+
+@keyframes contactMan {
+  0%,
+  100% {
+    transform: skewX(0); }
+  20% {
+    transform: skewX(0.5deg); }
+  40% {
+    transform: skewX(-0.5deg); }
+  70% {
+    transform: skewX(0deg); }
+  80% {
+    transform: skewX(-1deg); } }
+
+@keyframes contactManHead {
+  0%,
+  100% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-5deg); }
+  30% {
+    transform: rotate(-2deg); }
+  40% {
+    transform: rotate(-5deg); }
+  70% {
+    transform: rotate(2deg); }
+  80% {
+    transform: rotate(5deg); } }
+
+.contato {
+  width: 100%;
+  padding: 0 0 64px; }
+
+.form-contato {
+  width: 100%; }
+  .form-contato h2 {
+    margin-bottom: 16px;
+    color: #131617;
+    font-size: 32px;
+    line-height: 42px; }
+
+.form-contato-wrapper {
+  display: grid;
+  gap: 8px 16px;
+  grid-template-columns: repeat(2, 1fr); }
+  .form-contato-wrapper input:not([type='submit']),
+  .form-contato-wrapper textarea {
+    width: 100%;
+    height: 50px;
+    padding: 16px 8px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #707070;
+    color: #131617;
+    font-size: 14px; }
+  .form-contato-wrapper input[type='submit'] {
+    margin-top: 32px;
+    padding: 8px 32px;
+    display: inline-block;
+    background-color: #00c3ff;
+    border: 2px solid #00c3ff;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s background-color, 0.3s color;
+    transition-timing-function: ease-out; }
+    .form-contato-wrapper input[type='submit']:hover {
+      background-color: #fff;
+      color: #00c3ff; }
+  .form-contato-wrapper input[name='assunto'],
+  .form-contato-wrapper input[type='submit'],
+  .form-contato-wrapper textarea {
+    grid-column: 1 / 3; }
+
+.perguntas {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #f2f5f7; }
+  .perguntas h2 {
+    margin-bottom: 32px;
+    color: #1250b3;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center; }
+
+.dados {
+  width: 100%;
+  padding: 64px 0 0;
+  background-color: #fff; }
+
+.atendimento {
+  display: grid;
+  gap: 32px; }
+
+.atendimento-txt strong {
+  margin-bottom: 16px;
+  display: block;
+  font-size: 22px; }
+
+.atendimento-txt h4 {
+  margin: 16px 0 0;
+  color: #37a4d6;
+  font-size: 12px; }
+
+.atendimento-txt h3 {
+  margin: 0;
+  color: #1250b3;
+  font-size: 26px; }
+
+.atendimento-txt p {
+  margin: 0; }
+
+.atendimento-txt .btn-cta {
+  margin-top: 32px; }
+
+.atendimento-maps {
+  width: 100%;
+  height: 60vw;
+  display: flex; }
+  .atendimento-maps iframe {
+    width: 100%;
+    height: 100%; }
+
+.atendimento-img {
+  width: 100%;
+  margin-top: 64px;
+  display: flex; }
+  .atendimento-img svg {
+    width: 100%;
+    height: auto; }
+
+.juntese-banner {
+  position: relative;
+  width: 100%;
+  padding: 32px 0;
+  z-index: 1;
+  overflow-x: hidden; }
+  .juntese-banner .banner-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    z-index: -1; }
+
+.banner-juntese-txt {
+  margin-bottom: 32px; }
+  .banner-juntese-txt h1 {
+    color: #1250b3;
+    font-size: 44px;
+    line-height: 50px; }
+
+.banner-juntese-img {
+  width: 100%;
+  display: flex; }
+  .banner-juntese-img svg {
+    width: 100%;
+    height: auto; }
+
+#torne-se {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #torne-se #engrenagem_1 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #detalhe_1 {
+    animation: torneRotate 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #engrenagem_2 {
+    animation: torneRotate 45s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #detalhe_2 {
+    animation: torneRotate 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #engrenagem_3 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #detalhe_3 {
+    animation: torneRotate 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #airplane {
+    animation: economiaAirplane 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-se #man_head1 {
+    animation: torneMan 10s ease infinite;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+  #torne-se #man_head2 {
+    animation: torneMan 10s ease infinite reverse;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+  #torne-se #man_hand {
+    animation: torneMan 10s ease infinite;
+    transform-origin: 5% 70%;
+    transform-box: fill-box; }
+  #torne-se #hand_shake {
+    animation: torneShake 10s ease infinite;
+    transform-origin: 50% 95%;
+    transform-box: fill-box; }
+  #torne-se #dolar {
+    animation: torneDolar 20s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+
+@keyframes torneRotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes torneMan {
+  0%,
+  100% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-5deg); }
+  30% {
+    transform: rotate(-2deg); }
+  40% {
+    transform: rotate(-5deg); }
+  70% {
+    transform: rotate(2deg); }
+  80% {
+    transform: rotate(5deg); } }
+
+@keyframes torneShake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0); }
+  20% {
+    transform: translate3d(0, 3%, 0); }
+  30% {
+    transform: translate3d(0, -1%, 0); }
+  40% {
+    transform: translate3d(0, 2%, 0); }
+  70% {
+    transform: translate3d(0, -1%, 0); }
+  80% {
+    transform: translate3d(0, 2%, 0); } }
+
+@keyframes torneDolar {
+  0%,
+  100% {
+    transform: scale(1) translate3d(0, 0, 0); }
+  20% {
+    transform: scale(0.95) translate3d(0, 3%, 0); }
+  30% {
+    transform: scale(1) translate3d(0, -1%, 0); }
+  40% {
+    transform: scale(0.95) translate3d(0, 2%, 0); }
+  70% {
+    transform: scale(1) translate3d(0, -1%, 0); }
+  80% {
+    transform: scale(0.95) translate3d(0, 2%, 0); } }
+
+.juntese-explicacoes {
+  width: 100%;
+  padding: 64px 0; }
+  .juntese-explicacoes .container {
+    display: grid;
+    gap: 32px; }
+    .juntese-explicacoes .container div:nth-child(1) {
+      order: 2; }
+    .juntese-explicacoes .container div:nth-child(2) {
+      order: 1; }
+    .juntese-explicacoes .container div:nth-child(3) {
+      order: 3; }
+    .juntese-explicacoes .container div:nth-child(4) {
+      order: 4; }
+    .juntese-explicacoes .container div:nth-child(5) {
+      order: 6; }
+    .juntese-explicacoes .container div:nth-child(6) {
+      order: 5; }
+
+.juntese-explicacao-img {
+  width: 100%;
+  display: flex; }
+  .juntese-explicacao-img svg {
+    width: 100%;
+    height: auto; }
+
+.juntese-explicacao-txt h2 {
+  margin-bottom: 16px;
+  color: #1250b3;
+  font-size: 18px;
+  line-height: 24px; }
+
+#torne-conecte {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #torne-conecte #engrenagem_1 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-conecte #detalhe_1 {
+    animation: torneRotate 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-conecte #engrenagem_2 {
+    animation: torneRotate 45s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-conecte #detalhe_2 {
+    animation: torneRotate 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-conecte #man1 {
+    animation: torneManSkew 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #torne-conecte #man2 {
+    animation: torneManSkew 10s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #torne-conecte #man_head1 {
+    animation: torneMan 10s ease infinite;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+  #torne-conecte #man_head2 {
+    animation: torneMan 10s ease infinite reverse;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+  #torne-conecte #airplane {
+    animation: economiaAirplane 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+
+@keyframes torneManSkew {
+  0%,
+  100% {
+    transform: skewX(0); }
+  20% {
+    transform: skewX(0.5deg); }
+  40% {
+    transform: skewX(-0.5deg); }
+  70% {
+    transform: skewX(0deg); }
+  80% {
+    transform: skewX(-0.5deg); } }
+
+#torne-nosso {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #torne-nosso #engrenagem_1,
+  #torne-nosso #engrenagem_3,
+  #torne-nosso #engrenagem_5 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #detalhe_1,
+  #torne-nosso #detalhe_3,
+  #torne-nosso #detalhe_5 {
+    animation: torneRotate 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #engrenagem_2,
+  #torne-nosso #engrenagem_4 {
+    animation: torneRotate 45s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #detalhe_2,
+  #torne-nosso #detalhe_4 {
+    animation: torneRotate 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #foguete {
+    animation: torneRocket 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #lampada {
+    animation: torneRocket 15s ease infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-nosso #man_head1,
+  #torne-nosso #woman_head {
+    animation: torneMan 10s ease infinite;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+  #torne-nosso #man_head2 {
+    animation: torneMan 10s ease infinite reverse;
+    transform-origin: 70% 100%;
+    transform-box: fill-box; }
+
+@keyframes torneRocket {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0); }
+  20% {
+    transform: translate3d(0, 3%, 0); }
+  30% {
+    transform: translate3d(0, -1%, 0); }
+  40% {
+    transform: translate3d(0, 2%, 0); }
+  70% {
+    transform: translate3d(0, -1%, 0); }
+  80% {
+    transform: translate3d(0, 2%, 0); } }
+
+#torne-temos {
+  width: 100%;
+  height: auto;
+  overflow: visible; }
+  #torne-temos #engrenagem_1 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-temos #engrenagem_2 {
+    animation: torneRotate 45s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box; }
+  #torne-temos #man_1,
+  #torne-temos #woman_2 {
+    animation: torneManSkew 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+  #torne-temos #man_2,
+  #torne-temos #woman_1 {
+    animation: torneManSkew 10s ease infinite reverse;
+    transform-origin: 50% 100%;
+    transform-box: fill-box; }
+
+.empresas-parceiras {
+  position: relative;
+  width: 100%;
+  padding: 64px 0;
+  background-color: #1250b3;
+  z-index: 1;
+  overflow-y: hidden; }
+  .empresas-parceiras h2 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 44px; }
+  .empresas-parceiras .wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1; }
+
+.empresas-parceiras-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .empresas-parceiras-txt p {
+    margin-bottom: 32px;
+    color: #fff; }
+
+.juntese-conheca {
+  width: 100%;
+  padding: 64px 0; }
+
+.juntese-conheca-txt h2 {
+  margin-bottom: 16px;
+  font-size: 34px;
+  line-height: 38px;
+  color: #1250b3; }
 
 .newsletter {
   width: 100%;

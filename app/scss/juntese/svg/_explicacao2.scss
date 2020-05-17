@@ -1,0 +1,87 @@
+#torne-nosso {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #engrenagem_1,
+  #engrenagem_3,
+  #engrenagem_5 {
+    animation: torneRotate 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #detalhe_1,
+  #detalhe_3,
+  #detalhe_5 {
+    animation: torneRotate 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #engrenagem_2,
+  #engrenagem_4 {
+    animation: torneRotate 45s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #detalhe_2,
+  #detalhe_4 {
+    animation: torneRotate 45s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #foguete {
+    animation: torneRocket 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #lampada {
+    animation: torneRocket 15s ease infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #man_head1,
+  #woman_head {
+    animation: torneMan 10s ease infinite;
+    transform-origin: 70% 100%;
+    transform-box: fill-box;
+  }
+
+  #man_head2 {
+    animation: torneMan 10s ease infinite reverse;
+    transform-origin: 70% 100%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes torneRocket {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  20% {
+    transform: translate3d(0, 3%, 0);
+  }
+
+  30% {
+    transform: translate3d(0, -1%, 0);
+  }
+
+  40% {
+    transform: translate3d(0, 2%, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -1%, 0);
+  }
+
+  80% {
+    transform: translate3d(0, 2%, 0);
+  }
+}

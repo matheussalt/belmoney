@@ -1,0 +1,68 @@
+#seguranca {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #escudo {
+    animation: segurancaEscudo 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #check {
+    animation: segurancaCheck 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #chat {
+    animation: segurancaChat 10s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes segurancaEscudo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 10%, 0);
+  }
+}
+
+@keyframes segurancaCheck {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes segurancaChat {
+  0%,
+  15%,
+  85%,
+  100% {
+    opacity: 0;
+    transform: translate3d(-2%, 0, 0);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translate3d(-1%, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(2%, 0, 0);
+  }
+}

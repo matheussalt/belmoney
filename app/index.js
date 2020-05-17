@@ -11,3 +11,4 @@ openMenu('.choose-language', null);
 // scrollAnimation();
 
 togglePaises('.continente-name', '.continente');
+togglePaises('.termo-title', '.termo');

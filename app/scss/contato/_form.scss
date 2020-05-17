@@ -1,0 +1,58 @@
+.contato {
+  width: 100%;
+  padding: 0 0 64px;
+}
+
+.form-contato {
+  width: 100%;
+
+  h2 {
+    margin-bottom: 16px;
+    color: $black;
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.form-contato-wrapper {
+  display: grid;
+  gap: 8px 16px;
+  grid-template-columns: repeat(2, 1fr);
+
+  input:not([type='submit']),
+  textarea {
+    width: 100%;
+    height: 50px;
+    padding: 16px 8px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid $grey;
+    color: $black;
+    font-size: 14px;
+  }
+
+  input[type='submit'] {
+    margin-top: 32px;
+    padding: 8px 32px;
+    display: inline-block;
+    background-color: $shineBlue;
+    border: 2px solid $shineBlue;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s background-color, 0.3s color;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      background-color: #fff;
+      color: $shineBlue;
+    }
+  }
+
+  input[name='assunto'],
+  input[type='submit'],
+  textarea {
+    grid-column: 1 / 3;
+  }
+}

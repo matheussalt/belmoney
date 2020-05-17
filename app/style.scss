@@ -3,6 +3,7 @@ $lightBlue: #37a4d6;
 $shineBlue: #00c3ff;
 $darkBlue: #002740;
 $veryDarkBlue: #00223f;
+$grey: #707070;
 $lightGrey: #f2f5f7;
 $black: #131617;
 
@@ -99,5 +100,8 @@ h4 {
 @import './scss/sobre/index';
 @import './scss/solucoes/index';
 @import './scss/cobertura/index';
+@import './scss/seguranca/index';
+@import './scss/contato/index';
+@import './scss/juntese/index';
 @import './scss/footer/footer';
 @import './animation';

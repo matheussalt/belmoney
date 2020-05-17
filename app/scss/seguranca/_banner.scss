@@ -1,8 +1,9 @@
-.cobertura-banner {
+.seguranca-banner {
   position: relative;
   width: 100%;
-  padding: 32px 0 0;
+  padding: 32px 0;
   z-index: 1;
+  overflow-x: hidden;
 
   .banner-wave {
     position: absolute;
@@ -13,7 +14,7 @@
   }
 }
 
-.banner-cobertura-txt {
+.banner-seguranca-txt {
   margin-bottom: 32px;
 
   h1 {
@@ -23,7 +24,7 @@
   }
 }
 
-.banner-cobertura-img {
+.banner-seguranca-img {
   width: 100%;
   display: flex;
 

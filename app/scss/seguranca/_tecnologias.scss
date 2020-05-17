@@ -1,0 +1,45 @@
+.seguranca-tecnologias {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $blue;
+
+  h2 {
+    margin-bottom: 32px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.seguranca-tecnologias-wrapper {
+  display: grid;
+  gap: 32px;
+}
+
+.seguranca-tecnologia-item {
+  width: 100%;
+
+  img {
+    margin-bottom: 48px;
+  }
+
+  h4 {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: $shineBlue;
+    }
+  }
+
+  p {
+    color: #fff;
+  }
+}

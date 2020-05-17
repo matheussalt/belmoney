@@ -1,0 +1,58 @@
+.juntese-explicacoes {
+  width: 100%;
+  padding: 64px 0;
+
+  .container {
+    display: grid;
+    gap: 32px;
+
+    div {
+      &:nth-child(1) {
+        order: 2;
+      }
+
+      &:nth-child(2) {
+        order: 1;
+      }
+
+      &:nth-child(3) {
+        order: 3;
+      }
+
+      &:nth-child(4) {
+        order: 4;
+      }
+
+      &:nth-child(5) {
+        order: 6;
+      }
+
+      &:nth-child(6) {
+        order: 5;
+      }
+    }
+  }
+}
+
+.juntese-explicacao-img {
+  width: 100%;
+  display: flex;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.juntese-explicacao-txt {
+  h2 {
+    margin-bottom: 16px;
+    color: $blue;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@import './svg/explicacao1';
+@import './svg/explicacao2';
+@import './svg/explicacao3';

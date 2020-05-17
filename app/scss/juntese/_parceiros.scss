@@ -1,0 +1,33 @@
+.empresas-parceiras {
+  position: relative;
+  width: 100%;
+  padding: 64px 0;
+  background-color: $blue;
+  z-index: 1;
+  overflow-y: hidden;
+
+  h2 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.empresas-parceiras-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    margin-bottom: 32px;
+    color: #fff;
+  }
+}

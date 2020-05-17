@@ -63,10 +63,6 @@
 
       <div class="header-wrapper">
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'MenuTopo', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-
-        <a href="#" class="btn-cta">
-          <span>JUNTE-SE A NÓS</span>
-        </a>
       </div>
 
       <div class="header-buttons">
