@@ -1,0 +1,65 @@
+#pagamento-1 {
+  height: auto;
+  overflow: visible;
+
+  #hand {
+    animation: pagamentoHand 5s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes pagamentoHand {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+#pagamento-2 {
+  height: auto;
+  overflow: visible;
+
+  #moedas {
+    animation: pagamentoMoedas 5s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes pagamentoMoedas {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#pagamento-3 {
+  height: auto;
+  overflow: visible;
+
+  #hand {
+    animation: pagamentoHand2 5s ease infinite;
+    transform-origin: 100% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes pagamentoHand2 {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(0.9);
+  }
+}

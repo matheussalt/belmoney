@@ -1,0 +1,102 @@
+#suporte {
+  height: auto;
+  overflow: visible;
+
+  #dot_1 {
+    animation: funcionamDot1 2s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #dot_2 {
+    animation: funcionamDot2 2s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #dot_3 {
+    animation: funcionamDot3 2s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes funcionamDot1 {
+  0%,
+  4% {
+    opacity: 0;
+  }
+
+  5%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes funcionamDot2 {
+  0%,
+  32% {
+    opacity: 0;
+  }
+
+  33%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes funcionamDot3 {
+  0%,
+  64% {
+    opacity: 0;
+  }
+
+  66%,
+  100% {
+    opacity: 1;
+  }
+}
+
+#conjunto {
+  height: auto;
+  overflow: visible;
+
+  #download {
+    animation: funcionamDownload 5s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes funcionamDownload {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+#monitoramento {
+  height: auto;
+  overflow: visible;
+
+  #circle {
+    animation: funcionamCircle 5s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes funcionamCircle {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}

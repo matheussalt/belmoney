@@ -1,0 +1,13 @@
+.como-funcionam {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $blue;
+
+  h2,
+  p {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@import './svg/funcionamVector';

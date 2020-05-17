@@ -1,0 +1,16 @@
+.para-comerciantes {
+  width: 100%;
+  padding: 64px 0;
+}
+
+.para-comerciantes-img {
+  width: 100%;
+  margin-top: 32px;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@import './svg/comerciantesVector';

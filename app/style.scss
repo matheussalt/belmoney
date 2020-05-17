@@ -1,5 +1,6 @@
 $blue: #1250b3;
 $lightBlue: #37a4d6;
+$shineBlue: #00c3ff;
 $darkBlue: #002740;
 $veryDarkBlue: #00223f;
 $lightGrey: #f2f5f7;
@@ -38,7 +39,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   letter-spacing: 0.05rem;
 }
 
@@ -64,6 +66,16 @@ h3 {
     background-color: #fff;
     color: $lightBlue;
   }
+
+  &.lighter {
+    background-color: $shineBlue;
+    border: 2px solid $shineBlue;
+
+    &:hover {
+      color: $shineBlue;
+      background-color: #fff;
+    }
+  }
 }
 
 %beforeVector {
@@ -85,5 +97,7 @@ h3 {
 @import './scss/header/header';
 @import './scss/home/index';
 @import './scss/sobre/index';
+@import './scss/solucoes/index';
+@import './scss/cobertura/index';
 @import './scss/footer/footer';
 @import './animation';

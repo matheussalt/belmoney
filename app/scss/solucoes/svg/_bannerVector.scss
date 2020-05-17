@@ -1,0 +1,102 @@
+#city-guys {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #man_head {
+    animation: solucoesManHead 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #man {
+    animation: solucoesMan 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #woman {
+    animation: solucoesWoman 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #woman_hair {
+    animation: solucoesManHead 15s ease infinite;
+    transform-origin: 10% 10%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes solucoesManHead {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(2deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes solucoesMan {
+  0%,
+  100% {
+    transform: skewX(0);
+  }
+
+  20% {
+    transform: skewX(0.5deg);
+  }
+
+  40% {
+    transform: skewX(-0.5deg);
+  }
+
+  70% {
+    transform: skewX(0deg);
+  }
+
+  80% {
+    transform: skewX(-1deg);
+  }
+}
+
+@keyframes solucoesWoman {
+  0%,
+  100% {
+    transform: skewX(0);
+  }
+
+  20% {
+    transform: skewX(1deg);
+  }
+
+  40% {
+    transform: skewX(1.5deg);
+  }
+
+  70% {
+    transform: skewX(0deg);
+  }
+
+  80% {
+    transform: skewX(-0.5deg);
+  }
+}

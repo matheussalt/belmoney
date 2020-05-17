@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./app/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_animacoes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/animacoes */ \"./app/js/animacoes.js\");\n/* harmony import */ var _js_openMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/openMenu */ \"./app/js/openMenu.js\");\n/* harmony import */ var _js_scrollAnimation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/scrollAnimation */ \"./app/js/scrollAnimation.js\");\n/* harmony import */ var _js_modernizr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/modernizr */ \"./app/js/modernizr.js\");\n/* harmony import */ var _js_modernizr__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_modernizr__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_js_openMenu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-hamb', '.header-wrapper');\r\nObject(_js_openMenu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.choose-language', null);\r\n// scrollAnimation();\r\n\n\n//# sourceURL=webpack:///./app/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./app/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_animacoes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/animacoes */ \"./app/js/animacoes.js\");\n/* harmony import */ var _js_openMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/openMenu */ \"./app/js/openMenu.js\");\n/* harmony import */ var _js_togglePaises__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/togglePaises */ \"./app/js/togglePaises.js\");\n/* harmony import */ var _js_scrollAnimation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/scrollAnimation */ \"./app/js/scrollAnimation.js\");\n/* harmony import */ var _js_carrossel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/carrossel */ \"./app/js/carrossel.js\");\n/* harmony import */ var _js_modernizr__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/modernizr */ \"./app/js/modernizr.js\");\n/* harmony import */ var _js_modernizr__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_modernizr__WEBPACK_IMPORTED_MODULE_6__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_js_openMenu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-hamb', '.header-wrapper');\r\nObject(_js_openMenu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.choose-language', null);\r\n// scrollAnimation();\r\n\r\nObject(_js_togglePaises__WEBPACK_IMPORTED_MODULE_3__[\"default\"])('.continente-name', '.continente');\r\n\n\n//# sourceURL=webpack:///./app/index.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return animacoes; });\nfunction animacoes() {\r\n  const animaItem = document.querySelectorAll(\"[data-animar]\");\r\n\r\n  animaItem.forEach(item => {\r\n    if (item.getBoundingClientRect().top < window.innerHeight)\r\n      return item.classList.add(\"animar\");\r\n\r\n    window.addEventListener(\"scroll\", e => {\r\n      const distTop = window.innerHeight * 0.85;\r\n\r\n      if (item.getBoundingClientRect().top < distTop)\r\n        item.classList.add(\"animar\");\r\n    });\r\n  });\r\n\r\n  const animarComTempo = document.querySelectorAll(\"[data-anima-tempo]\");\r\n\r\n  window.setTimeout(() => {\r\n    animarComTempo.forEach(item => {\r\n      item.classList.add(\"animar\");\r\n    });\r\n  }, 500);\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/animacoes.js?");
+
+/***/ }),
+
+/***/ "./app/js/carrossel.js":
+/*!*****************************!*\
+  !*** ./app/js/carrossel.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return carrossel; });\nfunction carrossel(carrosselSelector, carrosselWrapperSelector) {\r\n  const carrossel = document.querySelector(carrosselSelector);\r\n  const carrosselWrapper = document.querySelector(carrosselWrapperSelector);\r\n  const carrosselItems = Array.from(carrosselWrapper.children);\r\n  let screenItem;\r\n\r\n  function verifyScreenSize() {\r\n    if (window.innerWidth < 768) {\r\n      screenItem = 1;\r\n    } else if (window.innerWidth < 1050) {\r\n      screenItem = 3;\r\n    } else {\r\n      screenItem = 5;\r\n    }\r\n  }\r\n\r\n  verifyScreenSize();\r\n\r\n  carrosselItems.forEach((item, index) => {\r\n    item.style.setProperty(\r\n      'width',\r\n      `${carrossel.getBoundingClientRect().width / screenItem}px`\r\n    );\r\n\r\n    if (index === 0) item.classList.add('active');\r\n  });\r\n\r\n  carrossel.addEventListener('mousedown', {});\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/carrossel.js?");
 
 /***/ }),
 
@@ -142,6 +154,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollAnimation; });\n/* harmony import */ var ScrollMagic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ScrollMagic */ \"./node_modules/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js\");\n/* harmony import */ var ScrollMagic__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ScrollMagic__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var scrollmagic_scrollmagic_uncompressed_plugins_debug_addIndicators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators */ \"./node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js\");\n/* harmony import */ var scrollmagic_scrollmagic_uncompressed_plugins_debug_addIndicators__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(scrollmagic_scrollmagic_uncompressed_plugins_debug_addIndicators__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var scrollmagic_plugin_gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! scrollmagic-plugin-gsap */ \"./node_modules/scrollmagic-plugin-gsap/index.js\");\n/* harmony import */ var scrollmagic_plugin_gsap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(scrollmagic_plugin_gsap__WEBPACK_IMPORTED_MODULE_3__);\n // Or use scrollmagic-with-ssr to avoid server rendering problems\r\n\r\n // Also works with TweenLite and TimelineLite\r\n\r\n\r\nObject(scrollmagic_plugin_gsap__WEBPACK_IMPORTED_MODULE_3__[\"ScrollMagicPluginGsap\"])(ScrollMagic__WEBPACK_IMPORTED_MODULE_0___default.a, gsap__WEBPACK_IMPORTED_MODULE_2__[\"TweenMax\"], gsap__WEBPACK_IMPORTED_MODULE_2__[\"TimelineMax\"]);\r\n\r\nfunction scrollAnimation() {\r\n  const tween = new gsap__WEBPACK_IMPORTED_MODULE_2__[\"TimelineLite\"]();\r\n\r\n  tween.add(\r\n    gsap__WEBPACK_IMPORTED_MODULE_2__[\"default\"].to('.logo-footer', 1, {\r\n      transform: `translate3d(0, 0, 0)`,\r\n      ease: Power1.easeInOut,\r\n    })\r\n  );\r\n\r\n  const controller = new ScrollMagic__WEBPACK_IMPORTED_MODULE_0___default.a.Controller();\r\n\r\n  const scene = new ScrollMagic__WEBPACK_IMPORTED_MODULE_0___default.a.Scene({\r\n    triggerElement: '.footer',\r\n    duration: 200,\r\n  })\r\n    .setTween(tween)\r\n    .addTo(controller);\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/scrollAnimation.js?");
+
+/***/ }),
+
+/***/ "./app/js/togglePaises.js":
+/*!********************************!*\
+  !*** ./app/js/togglePaises.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return togglePaises; });\nfunction togglePaises(buttons, target) {\r\n  const buttonsArray = document.querySelectorAll(buttons);\r\n  const targetArray = document.querySelectorAll(target);\r\n\r\n  buttonsArray.forEach((button, index) => {\r\n    button.addEventListener('click', (e) => {\r\n      e.preventDefault();\r\n\r\n      targetArray[index].classList.toggle('ativo');\r\n    });\r\n  });\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/togglePaises.js?");
 
 /***/ }),
 

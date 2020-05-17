@@ -1,0 +1,151 @@
+#palacio-woman {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #leaf_1 {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_2 {
+    animation: transferenciaLeaf 10s ease infinite reverse;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_3 {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_4 {
+    animation: transferenciaLeaf 10s ease infinite reverse;
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+  }
+
+  #dolar {
+    animation: transferenciaDolar 5s ease infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #left_arm {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 20% 10%;
+    transform-box: fill-box;
+  }
+
+  #right_arm {
+    animation: transferenciaLeaf 10s ease infinite reverse;
+    transform-origin: 20% 10%;
+    transform-box: fill-box;
+  }
+
+  #head {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+}
+
+#phone-woman {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #leaf_1 {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_2 {
+    animation: transferenciaLeaf 10s ease infinite reverse;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_3 {
+    animation: transferenciaLeaf 10s ease infinite;
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+  }
+
+  #leaf_4,
+  #leaf_5 {
+    animation: transferenciaLeaf 10s ease infinite reverse;
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+  }
+
+  #woman {
+    animation: transferenciaWoman 10s ease infinite;
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes transferenciaLeaf {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  40% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(2deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes transferenciaDolar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes transferenciaWoman {
+  0%,
+  100% {
+    transform: skewX(0);
+  }
+
+  20% {
+    transform: skewX(1deg);
+  }
+
+  40% {
+    transform: skewX(1.5deg);
+  }
+
+  70% {
+    transform: skewX(0deg);
+  }
+
+  80% {
+    transform: skewX(-0.5deg);
+  }
+}

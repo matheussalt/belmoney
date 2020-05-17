@@ -1,0 +1,36 @@
+.cobertura-banner {
+  position: relative;
+  width: 100%;
+  padding: 32px 0 0;
+  z-index: 1;
+
+  .banner-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.banner-cobertura-txt {
+  margin-bottom: 32px;
+
+  h1 {
+    color: $blue;
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+.banner-cobertura-img {
+  width: 100%;
+  display: flex;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@import './svg/bannerVector';

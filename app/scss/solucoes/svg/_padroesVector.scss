@@ -1,0 +1,85 @@
+#engine-guys {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  #engrenagem_1,
+  #engrenagem_3 {
+    animation: padroesEngrenagem1 60s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #engrenagem_2 {
+    animation: padroesEngrenagem1 60s linear infinite reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  #phone_arm {
+    animation: padroesArm 15s linear infinite;
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+  }
+
+  #man_arm {
+    animation: padroesArm 15s linear infinite;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+  }
+
+  #woman_arm {
+    animation: padroesArm 15s linear infinite reverse;
+    transform-origin: 0% 0%;
+    transform-box: fill-box;
+  }
+
+  #coffe_arm {
+    animation: padroesArm 15s linear infinite;
+    transform-origin: 0% 0%;
+    transform-box: fill-box;
+  }
+
+  #woman_head {
+    animation: padroesArm 15s linear infinite reverse;
+    transform-origin: 20% 100%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes padroesEngrenagem1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes padroesArm {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-3deg);
+  }
+
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  70% {
+    transform: rotate(2deg);
+  }
+
+  80% {
+    transform: rotate(3deg);
+  }
+}

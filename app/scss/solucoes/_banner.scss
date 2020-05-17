@@ -1,0 +1,35 @@
+.banner-solucoes {
+  width: 100%;
+  padding: 16px 0 64px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.banner-solucoes-txt {
+  margin-bottom: 32px;
+
+  h1 {
+    color: $blue;
+    font-size: 28px;
+  }
+
+  h2 {
+    margin: 16px 0;
+    font-size: 24px;
+  }
+}
+
+.banner-solucoes-img {
+  width: 100%;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@import './svg/bannerVector';
