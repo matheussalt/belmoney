@@ -10,4 +10,32 @@
     line-height: 38px;
     color: $blue;
   }
+
+  p {
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .juntese-conheca {
+    padding: 128px 0;
+  }
+
+  .juntese-conheca-txt {
+    margin-bottom: 128px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    h2 {
+      max-width: 400px;
+      margin-right: 64px;
+      font-size: 42px;
+      line-height: 48px;
+    }
+
+    div {
+      flex: 1;
+    }
+  }
 }

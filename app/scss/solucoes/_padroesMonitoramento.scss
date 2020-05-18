@@ -73,13 +73,27 @@
     justify-content: space-between;
 
     .apoio-txt {
-      max-width: 420px;
+      max-width: 520px;
       margin-right: 64px;
+
+      p {
+        margin: 32px 0;
+      }
+
+      a {
+        padding: 8px 92px;
+      }
     }
 
     .apoio-img {
       margin: 0;
     }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .apoio {
+    margin-top: 128px;
   }
 }
 

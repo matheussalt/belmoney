@@ -51,4 +51,14 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .compromisso {
+    padding: 256px 0 64px;
+
+    .container {
+      gap: 0;
+    }
+  }
+}
+
 @import './svg/compromissoVector';

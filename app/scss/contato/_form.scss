@@ -61,3 +61,13 @@
     padding: 0 0 128px;
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .form-contato-wrapper {
+    gap: 16px 32px;
+
+    input[type='submit'] {
+      width: 70%;
+    }
+  }
+}

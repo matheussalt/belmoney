@@ -130,8 +130,22 @@ $texto = get_sub_field('texto');
 
     <div class="descricao-funcionario">
       <div class="descricao-txt">
-        <h3></h3>
-        <p></p>
+        <?php 
+        $position = 0;
+        $isFirst = true; 
+        ?>
+        <?php query_posts( array( 'post_type' => 'equipe', 'posts_per_page' => -1 ) );  ?>
+        <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
+        <div class="descricao-item nome<?=$position?> <?php if ($isFirst) { echo 'active'; } ?>">
+          <h3><?=the_title()?></h3>
+          <?=the_content()?>
+        </div>
+
+        <?php if ($isFirst) { $isFirst = false; } ?>
+        <?php endwhile; ?>
+        <?php endif; wp_reset_query(); ?>
 
         <div class="buttons">
           <button class="descricao-left">
@@ -149,7 +163,21 @@ $texto = get_sub_field('texto');
       </div>
     </div>
 
-    <div class="nomes"></div>
+    <div class="nomes">
+      <?php 
+      $position = 0;
+      $isFirst = true; 
+      ?>
+      <?php query_posts( array( 'post_type' => 'equipe', 'posts_per_page' => -1 ) );  ?>
+      <?php if ( have_posts() ) : ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+
+      <button class="nome<?=$position?> <?php if ($isFirst) { echo 'active'; } ?> "><?=the_title()?></button>
+
+      <?php if ($isFirst) { $isFirst = false; } ?>
+      <?php endwhile; ?>
+      <?php endif; wp_reset_query(); ?>
+    </div>
   </div>
 </section>
 

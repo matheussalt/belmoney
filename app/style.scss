@@ -47,7 +47,7 @@ h4 {
 
 .container {
   width: 90%;
-  max-width: 1050px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -97,8 +97,15 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .btn-cta {
-    padding: 8px 64px;
+    padding: 8px 16px;
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-cta {
+    width: 300px;
+    font-size: 20px;
   }
 }
 

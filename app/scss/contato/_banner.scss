@@ -45,4 +45,10 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .banner-contato-img {
+    width: 85%;
+  }
+}
+
 @import './svg/bannerVector';

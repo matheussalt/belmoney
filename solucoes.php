@@ -253,20 +253,26 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
     <div class="item-with-svg-wrapper">
       <div class="item-with-svg">
-        <h4><?=$explicacao_1['subtitulo']?></h4>
-        <p><?=$explicacao_1['texto']?></p>
+        <div>
+          <h4><?=$explicacao_1['subtitulo']?></h4>
+          <p><?=$explicacao_1['texto']?></p>
+        </div>
         <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_1['botao']?></a>
       </div>
 
       <div class="item-with-svg">
-        <h4><?=$explicacao_2['subtitulo']?></h4>
-        <p><?=$explicacao_2['texto']?></p>
+        <div>
+          <h4><?=$explicacao_2['subtitulo']?></h4>
+          <p><?=$explicacao_2['texto']?></p>
+        </div>
         <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_2['botao']?></a>
       </div>
 
       <div class="item-with-svg">
-        <h4><?=$explicacao_3['subtitulo']?></h4>
-        <p><?=$explicacao_3['texto']?></p>
+        <div>
+          <h4><?=$explicacao_3['subtitulo']?></h4>
+          <p><?=$explicacao_3['texto']?></p>
+        </div>
         <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_3['botao']?></a>
       </div>
     </div>

@@ -47,4 +47,18 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .necessidade-items li {
+    height: 160px;
+
+    .necessidade-txt {
+      padding: 32px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 @import './svg/necessidadeVector';

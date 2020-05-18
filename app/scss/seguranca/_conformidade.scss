@@ -5,15 +5,22 @@
   h2 {
     color: $blue;
     font-size: 46px;
+    letter-spacing: 0.1rem;
   }
 
   h3 {
     max-width: 420px;
-    margin: 16px 0;
+    margin: 16px 0 32px;
     color: $black;
     font-weight: normal;
     font-size: 20px;
+    letter-spacing: 0.08rem;
     line-height: 36px;
+  }
+
+  p {
+    font-size: 15px;
+    letter-spacing: 0.05rem;
   }
 }
 

@@ -75,6 +75,23 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .juntese-explicacoes .container {
+    gap: 64px;
+
+    div {
+      &:nth-child(2),
+      &:nth-child(6) {
+        justify-self: flex-end;
+      }
+    }
+  }
+
+  .juntese-explicacao-txt {
+    max-width: 380px;
+  }
+}
+
 @import './svg/explicacao1';
 @import './svg/explicacao2';
 @import './svg/explicacao3';

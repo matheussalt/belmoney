@@ -1,10 +1,11 @@
 <div class="carrossel-equipe">
   <div class="carrossel-wrapper">
+    <?php $isFirst = true; ?>
     <?php query_posts( array( 'post_type' => 'equipe', 'posts_per_page' => -1 ) );  ?>
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <div class="funciona rio">
+    <div class="funcionario <?php if ($isFirst) { echo 'active'; } ?>">
       <div class="funcionario-img">
         <?php if (get_field('picture')) { ?>
         <img class="with-picture" src="<?=the_field('picture')?>" alt="<?=the_title()?>" />
@@ -27,6 +28,7 @@
       </div>
     </div>
 
+    <?php if ($isFirst) { $isFirst = false; } ?>
     <?php endwhile; ?>
     <?php endif; wp_reset_query(); ?>
   </div>

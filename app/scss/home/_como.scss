@@ -28,6 +28,7 @@
   @extend %beforeVector;
 
   p {
+    max-width: 380px;
     color: #fff;
   }
 }
@@ -41,6 +42,24 @@
 @media screen and (min-width: 768px) {
   .como {
     padding: 128px 0;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .como {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .como-wave-dark {
+      left: 0;
+    }
+  }
+
+  .como-txt {
+    margin-left: 64px;
   }
 }
 

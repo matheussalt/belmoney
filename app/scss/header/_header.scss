@@ -9,6 +9,7 @@
 
   nav {
     width: 95%;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@
 .choose-language {
   position: relative;
   height: 16px;
+  cursor: pointer;
 
   &.active {
     ul {

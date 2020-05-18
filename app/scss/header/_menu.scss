@@ -48,6 +48,10 @@
       text-align: center;
       color: $black;
       text-transform: uppercase;
+
+      &:hover {
+        color: $blue;
+      }
     }
   }
 }
@@ -95,5 +99,36 @@
 @media screen and (min-width: 768px) {
   .header-wrapper ul li a {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .header-wrapper {
+    position: static;
+    top: unset;
+    right: unset;
+    width: unset;
+    max-width: unset;
+    height: unset;
+    transform: unset;
+    box-shadow: unset;
+
+    ul {
+      flex-direction: row;
+
+      li:last-of-type a {
+        margin: 0;
+        margin-left: 16px;
+      }
+
+      li a {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .menu-hamb {
+    display: none;
   }
 }

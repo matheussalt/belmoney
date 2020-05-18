@@ -113,7 +113,9 @@ $explicacao_3 = get_sub_field('explicacao_3');
   <div class="container">
     <div class="juntese-conheca-txt">
       <h2><?=$titulo?></h2>
-      <p><?=$texto?></p>
+      <div>
+        <p><?=$texto?></p>
+      </div>
     </div>
 
     <div class="item-with-svg-wrapper">

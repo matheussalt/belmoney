@@ -30,7 +30,7 @@
 
 .banner-solucoes-img {
   width: 100%;
-  max-width: 520px;
+  max-width: 440px;
   align-self: center;
 
   svg {
@@ -50,6 +50,27 @@
       font-size: 36px;
       line-height: 42px;
     }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .banner-solucoes {
+    width: 100%;
+    padding: 64px 0;
+
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  .banner-solucoes-txt {
+    margin: 0;
+  }
+
+  .banner-solucoes-img {
+    align-self: flex-end;
   }
 }
 

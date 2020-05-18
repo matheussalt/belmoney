@@ -2,8 +2,78 @@
   padding: 64px 0;
   background-color: $lightGrey;
 
-  h2 {
-    color: $blue;
-    text-align: center;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      max-width: 580px;
+      text-align: center;
+    }
+  }
+
+  .item-with-svg-wrapper {
+    h4 {
+      margin-top: 32px;
+      position: relative;
+      max-width: 100px;
+      text-align: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        width: 100px;
+        height: 4px;
+        transform: translate3d(-50%, 0, 0);
+        background-color: $shineBlue;
+      }
+    }
+
+    p {
+      margin-top: 16px;
+
+      &::before {
+        content: unset;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .como-receber {
+    padding: 128px 0;
+
+    .container h2 {
+      margin-bottom: 64px;
+      font-size: 30px;
+    }
+
+    .item-with-svg-wrapper {
+      .item-with-svg {
+        justify-content: space-between;
+      }
+
+      h4 {
+        max-width: 120px;
+        margin-top: 0;
+        font-size: 18px;
+        text-align: left;
+
+        &::before {
+          content: '';
+          left: 0;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      p {
+        max-width: unset;
+        font-size: 15px;
+        letter-spacing: 0.05rem;
+      }
+    }
   }
 }

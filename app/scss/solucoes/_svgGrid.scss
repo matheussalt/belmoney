@@ -13,9 +13,12 @@
 
   p {
     position: relative;
-    max-width: 260px;
+    max-width: 220px;
     margin-top: 32px;
+    font-size: 14px;
     font-weight: lighter;
+    letter-spacing: 0.05rem;
+    line-height: 27px;
     text-align: center;
 
     &::before {

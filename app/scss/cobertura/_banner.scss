@@ -25,6 +25,7 @@
   h1 {
     color: $blue;
     font-size: 44px;
+    letter-spacing: 0.08rem;
     line-height: 50px;
   }
 }
@@ -51,6 +52,27 @@
     p {
       max-width: 75%;
     }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .cobertura-banner {
+    height: 90vh;
+    min-height: 600px;
+    max-height: 800px;
+
+    .container {
+      height: 100%;
+      flex-direction: row;
+    }
+
+    .banner-wave {
+      width: 100%;
+    }
+  }
+
+  .banner-cobertura-img {
+    align-self: flex-end;
   }
 }
 
