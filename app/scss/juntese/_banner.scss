@@ -5,6 +5,11 @@
   z-index: 1;
   overflow-x: hidden;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .banner-wave {
     position: absolute;
     top: 0;
@@ -16,9 +21,9 @@
 
 .banner-juntese-txt {
   margin-bottom: 32px;
+  max-width: 420px;
 
   h1 {
-    color: $blue;
     font-size: 44px;
     line-height: 50px;
   }
@@ -26,11 +31,28 @@
 
 .banner-juntese-img {
   width: 100%;
+  max-width: 520px;
+  align-self: center;
   display: flex;
 
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .juntese-banner {
+    padding: 64px 0;
+
+    .banner-wave {
+      width: 100%;
+    }
+  }
+
+  .banner-juntese-txt h1 {
+    font-size: 64px;
+    line-height: 72px;
   }
 }
 

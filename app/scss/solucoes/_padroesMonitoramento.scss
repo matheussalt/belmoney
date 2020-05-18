@@ -3,9 +3,16 @@
   padding: 64px 0;
   background-color: $lightGrey;
 
-  h2 {
-    color: $blue;
-    text-align: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      max-width: 560px;
+      align-self: center;
+      color: $blue;
+      text-align: center;
+    }
   }
 }
 
@@ -46,6 +53,32 @@
     svg {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .padroes-monitoramento {
+    padding: 128px 0;
+
+    .container h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .apoio {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .apoio-txt {
+      max-width: 420px;
+      margin-right: 64px;
+    }
+
+    .apoio-img {
+      margin: 0;
     }
   }
 }

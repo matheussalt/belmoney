@@ -95,7 +95,7 @@ $botao = get_sub_field('botao');
         <?=$texto?>
       </div>
 
-      <a class="btn-cta" href="<?=site_url()?>/">
+      <a class="btn-cta lighter" href="<?=site_url()?>/">
         <span><?=$botao?></span>
       </a>
     </div>

@@ -2,9 +2,27 @@
   padding: 64px 0;
   background-color: $lightGrey;
 
-  h2 {
-    color: $blue;
-    text-align: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      max-width: 480px;
+      color: $blue;
+      text-align: center;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fazer-pagamentos {
+    padding: 128px 0;
+
+    .container h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }
 

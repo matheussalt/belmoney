@@ -6,10 +6,33 @@
 .para-comerciantes-img {
   width: 100%;
   margin-top: 32px;
+  flex: 1;
 
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .para-comerciantes {
+    padding: 128px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .para-comerciantes-txt {
+    width: 45%;
+    margin-right: 64px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }
 

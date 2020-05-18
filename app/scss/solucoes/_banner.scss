@@ -10,6 +10,7 @@
 }
 
 .banner-solucoes-txt {
+  max-width: 480px;
   margin-bottom: 32px;
 
   h1 {
@@ -21,14 +22,34 @@
     margin: 16px 0;
     font-size: 24px;
   }
+
+  p {
+    max-width: 380px;
+  }
 }
 
 .banner-solucoes-img {
   width: 100%;
+  max-width: 520px;
+  align-self: center;
 
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-solucoes-txt {
+    h1 {
+      font-size: 46px;
+      line-height: 52px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 }
 

@@ -19,11 +19,14 @@ $texto = get_sub_field('texto');
   <div class="container">
     <div class="banner-sobre-txt">
       <h1><?=$titulo?></h1>
-      <p><?=$texto?></p>
     </div>
 
-    <div class="banner-sobre-img">
-      <?php include 'img/svg/sobre/sobre_vector.php'; ?>
+    <div class="banner-sobre-wrapper">
+      <p><?=$texto?></p>
+
+      <div class="banner-sobre-img">
+        <?php include 'img/svg/sobre/sobre_vector.php'; ?>
+      </div>
     </div>
   </div>
 
@@ -211,7 +214,7 @@ $texto = get_sub_field('texto');
 
       <h2><?=$titulo?></h2>
       <?=$texto?>
-      <a class="btn-cta" href="<?=site_url()?>/contato"><?=$botao?></a>
+      <a class="btn-cta lighter" href="<?=site_url()?>/contato"><?=$botao?></a>
 
       <?php endwhile; ?>
       <?php endif; ?>

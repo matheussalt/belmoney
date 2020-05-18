@@ -2,6 +2,11 @@
   width: 100%;
   padding: 64px 0 0;
   background-color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .atendimento {
@@ -50,11 +55,23 @@
 
 .atendimento-img {
   width: 100%;
+  max-width: 520px;
   margin-top: 64px;
   display: flex;
+  align-self: center;
 
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .atendimento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .atendimento-maps {
+    height: 240px;
   }
 }

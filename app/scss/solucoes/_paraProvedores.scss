@@ -16,5 +16,28 @@
   h2,
   p {
     color: #fff;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .para-provedores {
+    padding: 128px 0;
+
+    .wave {
+      left: unset;
+      right: 0;
+      width: auto;
+      height: 100%;
+    }
+
+    .item-with-svg-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }

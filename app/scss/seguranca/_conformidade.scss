@@ -8,10 +8,18 @@
   }
 
   h3 {
+    max-width: 420px;
     margin: 16px 0;
     color: $black;
     font-weight: normal;
     font-size: 20px;
     line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conformidade h2 {
+    font-size: 64px;
+    line-height: 72px;
   }
 }

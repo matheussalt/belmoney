@@ -1,6 +1,11 @@
 .contato-banner {
   width: 100%;
   padding: 32px 0 64px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .banner-contato-txt {
@@ -20,6 +25,23 @@
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contato-banner .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .banner-contato-txt {
+    margin-bottom: 0;
+    margin-right: 64px;
+
+    h1 {
+      font-size: 56px;
+      line-height: 64px;
+    }
   }
 }
 

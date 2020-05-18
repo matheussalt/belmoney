@@ -12,6 +12,7 @@
     .necessidade-img {
       height: 130px;
       padding: 32px 16px 8px;
+      display: flex;
       background-color: $lightGrey;
 
       svg {
@@ -32,6 +33,16 @@
         font-size: 12px;
         text-align: center;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .necessidade-items {
+    grid-template-columns: repeat(4, 1fr);
+
+    li .necessidade-img {
+      height: 160px;
     }
   }
 }

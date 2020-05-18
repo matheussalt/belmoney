@@ -41,3 +41,37 @@
     transform: translate3d(-50%, 0, 0);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .happ {
+    padding: 128px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .happ-txt {
+    max-width: 40%;
+  }
+
+  .happ-img {
+    width: unset;
+    height: 480px;
+    flex: 1;
+
+    .phone-back {
+      width: unset;
+      height: 65%;
+    }
+
+    .phone-front {
+      top: 40%;
+      bottom: unset;
+      width: unset;
+      height: 65%;
+    }
+  }
+}

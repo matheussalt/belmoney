@@ -33,4 +33,22 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .compromisso .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: center;
+  }
+
+  .compromisso-txt {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .compromisso-img:nth-of-type(3) {
+    order: 0;
+  }
+}
+
 @import './svg/compromissoVector';

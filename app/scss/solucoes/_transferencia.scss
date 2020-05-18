@@ -21,4 +21,19 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .transferencia {
+    padding: 128px 0;
+
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+
+  .transferencia-img:nth-of-type(3) {
+    order: 0;
+  }
+}
+
 @import './svg/transferenciaVector';

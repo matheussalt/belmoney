@@ -53,6 +53,28 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .juntese-explicacoes {
+    padding: 128px 0;
+
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      div {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          order: 0;
+        }
+      }
+    }
+  }
+}
+
 @import './svg/explicacao1';
 @import './svg/explicacao2';
 @import './svg/explicacao3';

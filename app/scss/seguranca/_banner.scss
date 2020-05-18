@@ -5,6 +5,11 @@
   z-index: 1;
   overflow-x: hidden;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .banner-wave {
     position: absolute;
     top: 0;
@@ -16,6 +21,7 @@
 
 .banner-seguranca-txt {
   margin-bottom: 32px;
+  max-width: 380px;
 
   h1 {
     color: $blue;
@@ -26,11 +32,22 @@
 
 .banner-seguranca-img {
   width: 100%;
+  max-width: 460px;
+  align-self: center;
   display: flex;
 
   svg {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-seguranca-txt {
+    h1 {
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 }
 

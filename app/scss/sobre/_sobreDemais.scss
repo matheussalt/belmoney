@@ -3,6 +3,8 @@
   width: 100%;
   padding: 64px 0;
   background-color: #fff;
+  z-index: 1;
+  overflow: hidden;
 
   .container {
     display: grid;
@@ -24,5 +26,54 @@
 
   p {
     font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sobre-demais {
+    padding: 128px 0;
+
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 64px;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3 {
+      position: absolute;
+      border-radius: 50%;
+      background-color: $lightBlue;
+      z-index: -1;
+    }
+
+    .circle1 {
+      bottom: -10%;
+      left: -20vw;
+      width: 40vw;
+      max-width: 380px;
+      height: 40vw;
+      max-height: 380px;
+    }
+
+    .circle2 {
+      top: -10%;
+      right: -20vw;
+      width: 35vw;
+      max-width: 400px;
+      height: 35vw;
+      max-height: 400px;
+      background-color: $shineBlue;
+    }
+
+    .circle3 {
+      bottom: 10%;
+      left: -20vw;
+      width: 30vw;
+      max-width: 320px;
+      height: 30vw;
+      max-height: 320px;
+      background-color: $shineBlue;
+    }
   }
 }
