@@ -21,14 +21,14 @@ $frase_2 = get_sub_field('frase_2');
 <section class="banner">
   <div class="container">
     <div class="banner-wrapper">
-      <div class="banner-txt">
+      <div class="banner-txt" data-animar>
         <h1><?=$titulo_1?> <strong><?=$titulo_2?></strong></h1>
         <a href="#" class="btn-cta">
           <span><?=$botao?></span>
         </a>
       </div>
 
-      <div class="banner-frases">
+      <div class="banner-frases" data-animar>
         <span><?=$frase_1?></span>
 
         <span><?=$frase_2?></span>
@@ -37,7 +37,7 @@ $frase_2 = get_sub_field('frase_2');
       <?php include 'img/svg/home/mouse_vector.php'; ?>
     </div>
 
-    <div class="banner-img">
+    <div class="banner-img" data-animar>
       <?php include 'img/svg/home/banner_vector.php'; ?>
     </div>
   </div>

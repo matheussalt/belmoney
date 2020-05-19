@@ -5,6 +5,8 @@ export default function nomeTrigger() {
   const rightButton = document.querySelector('.descricao-right');
   let position = 0;
 
+  if (!nomes || !descricoes || !leftButton || !rightButton) return null;
+
   nomes.forEach((nome, index) => {
     nome.addEventListener('click', (e) => {
       e.preventDefault();

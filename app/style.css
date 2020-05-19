@@ -249,12 +249,28 @@ h4 {
     line-height: 8vw;
     color: #1250b3; }
 
+.banner-txt {
+  transform: translate3d(-10%, 0, 0);
+  opacity: 0;
+  transition: 1.2s transform, 1.2s opacity;
+  transition-timing-function: ease-out; }
+  .banner-txt.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+
 .banner-frases {
   width: 100%;
   margin: 16px 0;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transform: translate3d(-10%, 0, 0);
+  opacity: 0;
+  transition: 1.2s transform, 1.2s opacity;
+  transition-timing-function: ease-out; }
+  .banner-frases.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
   .banner-frases span {
     width: 40%;
     margin: 8px 0;
@@ -263,7 +279,14 @@ h4 {
 
 .banner-img {
   max-width: 500px;
-  align-self: center; }
+  align-self: center;
+  transform: translate3d(10%, 0, 0);
+  opacity: 0;
+  transition: 1.2s transform, 1.2s opacity;
+  transition-timing-function: ease-out; }
+  .banner-img.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
 
 @media screen and (min-width: 768px) {
   .banner-wrapper h1 {
