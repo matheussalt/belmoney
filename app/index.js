@@ -4,7 +4,7 @@ import openMenu from './js/openMenu';
 import togglePaises from './js/togglePaises';
 import nomeTrigger from './js/nomeTrigger';
 import carrossel from './js/carrossel';
-import './js/initScrollAnimations';
+import { animationHome } from './js/initScrollAnimations';
 import './js/modernizr';
 
 openMenu('.menu-hamb', '.header-wrapper');
@@ -16,3 +16,9 @@ togglePaises('.termo-title', '.termo');
 nomeTrigger();
 
 animacoes();
+
+carrossel();
+
+// if (`${baseURL}/` === window.location.href) {
+//   animationHome();
+// }

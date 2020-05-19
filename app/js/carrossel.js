@@ -1,29 +1,74 @@
 export default function carrossel(carrosselSelector, carrosselWrapperSelector) {
-  const carrossel = document.querySelector(carrosselSelector);
-  const carrosselWrapper = document.querySelector(carrosselWrapperSelector);
-  const carrosselItems = Array.from(carrosselWrapper.children);
-  let screenItem;
+  const carrosselEquipe = document.querySelectorAll(
+    '.carrossel-equipe .funcionario'
+  );
+  const carrosselWrapper = document.querySelector('.carrossel-wrapper');
+  let carrosselPosition = 0;
+  let carrosselMovement = 312;
+  let funcionarioAtivo = 0;
+  let cliqueInicial;
+  let cliqueFinal;
 
-  function verifyScreenSize() {
-    if (window.innerWidth < 768) {
-      screenItem = 1;
-    } else if (window.innerWidth < 1050) {
-      screenItem = 3;
-    } else {
-      screenItem = 5;
-    }
-  }
+  if (!carrosselEquipe || !carrosselWrapper) return null;
 
-  verifyScreenSize();
+  carrosselWrapper.addEventListener('mousedown', (e) => {
+    e.preventDefault();
 
-  carrosselItems.forEach((item, index) => {
-    item.style.setProperty(
-      'width',
-      `${carrossel.getBoundingClientRect().width / screenItem}px`
-    );
+    cliqueInicial = e.clientX;
 
-    if (index === 0) item.classList.add('active');
+    carrosselWrapper.addEventListener('mousemove', moverCarrossel);
   });
 
-  carrossel.addEventListener('mousedown', {});
+  carrosselWrapper.addEventListener('mouseup', (e) => {
+    e.preventDefault();
+
+    cliqueFinal = e.clientX;
+
+    if (
+      funcionarioAtivo < carrosselEquipe.length - 1 &&
+      cliqueInicial > cliqueFinal
+    ) {
+      funcionarioAtivo++;
+
+      carrosselEquipe.forEach((funcionario, index) => {
+        funcionario.classList.remove('active');
+
+        if (index === funcionarioAtivo) funcionario.classList.add('active');
+      });
+
+      carrosselPosition -= carrosselMovement;
+
+      carrosselWrapper.style.setProperty('left', `${carrosselPosition}px`);
+      carrosselWrapper.style.setProperty('transform', 'translate3d(0, 0, 0)');
+    } else if (funcionarioAtivo !== 0) {
+      funcionarioAtivo--;
+
+      carrosselEquipe.forEach((funcionario, index) => {
+        funcionario.classList.remove('active');
+
+        if (index === funcionarioAtivo) funcionario.classList.add('active');
+      });
+
+      carrosselPosition += carrosselMovement;
+
+      carrosselWrapper.style.setProperty('left', `${carrosselPosition}px`);
+      carrosselWrapper.style.setProperty('transform', 'translate3d(0, 0, 0)');
+    } else {
+      carrosselPosition = 0;
+
+      carrosselWrapper.style.setProperty('left', `${carrosselPosition}px`);
+      carrosselWrapper.style.setProperty('transform', 'translate3d(0, 0, 0)');
+    }
+
+    carrosselWrapper.removeEventListener('mousemove', moverCarrossel);
+  });
+
+  function moverCarrossel(e) {
+    e.preventDefault();
+
+    carrosselWrapper.style.setProperty(
+      'transform',
+      `translate3d(${-(e, cliqueInicial - e.clientX)}px, 0, 0)`
+    );
+  }
 }

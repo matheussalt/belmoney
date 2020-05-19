@@ -18,11 +18,11 @@ $texto = get_sub_field('texto');
 <section class="seguranca-banner">
   <div class="container">
     <div class="banner-seguranca-txt">
-      <h1><?=$titulo?></h1>
-      <p><?=$texto?></p>
+      <h1 class="fadeRight" data-animar><?=$titulo?></h1>
+      <p class="fadeRight" data-animar><?=$texto?></p>
     </div>
 
-    <div class="banner-seguranca-img">
+    <div class="banner-seguranca-img fadeUp" data-animar>
       <?php include 'img/svg/seguranca/banner_vector.php'; ?>
     </div>
   </div>
@@ -44,22 +44,22 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 <section class="seguranca-tecnologias">
   <div class="container">
-    <h2><?=$titulo?></h2>
+    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
 
     <div class="seguranca-tecnologias-wrapper">
-      <div class="seguranca-tecnologia-item">
+      <div class="seguranca-tecnologia-item fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_1.svg" alt="<?=$explicacao_1['subtitulo']?>" />
         <h4><?=$explicacao_1['subtitulo']?></h4>
         <p><?=$explicacao_1['texto']?></p>
       </div>
 
-      <div class="seguranca-tecnologia-item">
+      <div class="seguranca-tecnologia-item fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_2.svg" alt="<?=$explicacao_2['subtitulo']?>" />
         <h4><?=$explicacao_2['subtitulo']?></h4>
         <p><?=$explicacao_2['texto']?></p>
       </div>
 
-      <div class="seguranca-tecnologia-item">
+      <div class="seguranca-tecnologia-item fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_3.svg" alt="<?=$explicacao_3['subtitulo']?>" />
         <h4><?=$explicacao_3['subtitulo']?></h4>
         <p><?=$explicacao_3['texto']?></p>

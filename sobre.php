@@ -18,21 +18,21 @@ $texto = get_sub_field('texto');
 <section class="sobre-banner">
   <div class="container">
     <div class="banner-sobre-txt">
-      <h1><?=$titulo?></h1>
+      <h1 class="fadeRight" data-animar><?=$titulo?></h1>
     </div>
 
     <div class="banner-sobre-wrapper">
-      <p><?=$texto?></p>
+      <p class="fadeLeft" data-animar><?=$texto?></p>
 
-      <div class="banner-sobre-img">
+      <div class="banner-sobre-img fadeLeft" data-animar>
         <?php include 'img/svg/sobre/sobre_vector.php'; ?>
       </div>
     </div>
   </div>
 
-  <div class="circle1"></div>
-  <div class="circle2"></div>
-  <div class="circle3"></div>
+  <div class="circle1 fadeLeft" data-animar></div>
+  <div class="circle2 fadeUp" data-animar></div>
+  <div class="circle3 fadeDown" data-animar></div>
 </section>
 
 <?php endwhile; ?>
@@ -72,7 +72,7 @@ $texto = get_sub_field('texto');
 
 <section class="auditoria">
   <div class="container">
-    <div class="auditoria-content">
+    <div class="auditoria-content fadeRight" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/lupa.svg" alt="Auditoria externa" />
 
       <?php if( have_rows('auditoria_externa') ): ?>
@@ -89,7 +89,7 @@ $texto = get_sub_field('texto');
       <?php endif; ?>
     </div>
 
-    <div class="auditoria-content">
+    <div class="auditoria-content fadeLeft" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/lupa2.svg" alt="Auditoria interna" />
 
       <?php if( have_rows('auditoria_interna') ): ?>

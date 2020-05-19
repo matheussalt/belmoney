@@ -18,11 +18,11 @@ $texto = get_sub_field('texto');
 <section class="cobertura-banner">
   <div class="container">
     <div class="banner-cobertura-txt">
-      <h1><?=$titulo?></h1>
-      <p><?=$texto?></p>
+      <h1 class="fadeRight" data-animar><?=$titulo?></h1>
+      <p class="fadeRight" data-animar><?=$texto?></p>
     </div>
 
-    <div class="banner-cobertura-img">
+    <div class="banner-cobertura-img fadeUp" data-animar>
       <?php include 'img/svg/cobertura/banner_vector.php'; ?>
     </div>
   </div>

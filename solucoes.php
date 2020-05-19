@@ -20,13 +20,13 @@ $frase_2 = get_sub_field('frase_2');
 <section class="banner-solucoes">
   <div class="container">
     <div class="banner-solucoes-txt">
-      <h1><?=$titulo?></h1>
-      <h2><?=$subtitulo?></h2>
-      <p><?=$frase_1?></p>
-      <p><?=$frase_2?></p>
+      <h1 class="fadeRight" data-animar><?=$titulo?></h1>
+      <h2 class="fadeRight" data-animar><?=$subtitulo?></h2>
+      <p class="fadeUp" data-animar><?=$frase_1?></p>
+      <p class="fadeUp" data-animar><?=$frase_2?></p>
     </div>
 
-    <div class="banner-solucoes-img">
+    <div class="banner-solucoes-img fadeLeft" data-animar>
       <?php include 'img/svg/solucoes/city_guys.php'; ?>
     </div>
   </div>
@@ -46,20 +46,20 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 <section class="fazer-pagamentos">
   <div class="container">
-    <h2><?=$titulo?></h2>
+    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
 
     <div class="item-with-svg-wrapper">
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/pagamento_1.php'; ?>
         <p><?=$explicacao_1?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/pagamento_2.php'; ?>
         <p><?=$explicacao_2?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/pagamento_3.php'; ?>
         <p><?=$explicacao_3?></p>
       </div>
@@ -82,21 +82,21 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 <section class="como-funcionam">
   <div class="container">
-    <h2><?=$titulo?></h2>
-    <p><?=$subtitulo?></p>
+    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
+    <p class="fadeUp" data-animar><?=$subtitulo?></p>
 
     <div class="item-with-svg-wrapper">
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/suporte.php'; ?>
         <p><?=$explicacao_1?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/conjunto.php'; ?>
         <p><?=$explicacao_2?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/monitoramento.php'; ?>
         <p><?=$explicacao_3?></p>
       </div>
@@ -118,20 +118,20 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 <section class="padroes-monitoramento">
   <div class="container">
-    <h2><?=$titulo?></h2>
+    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
 
     <div class="item-with-svg-wrapper">
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/capacitado.php'; ?>
         <p><?=$explicacao_1?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/gerenciamento.php'; ?>
         <p><?=$explicacao_2?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <?php include 'img/svg/solucoes/verificacao.php'; ?>
         <p><?=$explicacao_3?></p>
       </div>
@@ -146,13 +146,13 @@ $explicacao_3 = get_sub_field('explicacao_3');
     ?>
 
     <div class="apoio">
-      <div class="apoio-txt">
+      <div class="apoio-txt fadeUp" data-animar>
         <h3><?=$titulo?></h3>
         <p><?=$texto?></p>
         <a href="<?=site_url()?>/" class="btn-cta lighter"><?=$botao?></a>
       </div>
 
-      <div class="apoio-img">
+      <div class="apoio-img fadeLeft" data-animar>
         <?php include 'img/svg/solucoes/engine_guys.php'; ?>
       </div>
     </div>
@@ -174,14 +174,14 @@ $botao = get_sub_field('botao');
 
 <section class="happ" style="background-image: url('<?=get_template_directory_URI()?>/img/src/happ_background.svg');">
   <div class="container">
-    <div class="happ-txt">
+    <div class="happ-txt fadeRight" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/logo_happ.svg" alt="Logotipo Happ" />
       <?=$texto?>
 
       <a class="btn-cta lighter" href="#" target="_blank"><?=$botao?></a>
     </div>
 
-    <div class="happ-img">
+    <div class="happ-img fadeLeft" data-animar>
       <img class="phone-back" src="<?=get_template_directory_URI()?>/img/src/phone_back.png" alt="App Happ" />
       <img class="phone-front" src="<?=get_template_directory_URI()?>/img/src/phone_front.png" alt="App Happ" />
     </div>
@@ -202,7 +202,7 @@ $botao = get_sub_field('botao');
     $botao = get_sub_field('botao');
     ?>
 
-    <div class="transferencia-txt">
+    <div class="transferencia-txt fadeUp" data-animar>
       <h2><?=$titulo?></h2>
       <?=$texto?>
       <a class="btn-cta lighter" href="#"><?=$botao?></a>
@@ -211,11 +211,11 @@ $botao = get_sub_field('botao');
     <?php endwhile; ?>
     <?php endif; ?>
 
-    <div class="transferencia-img">
+    <div class="transferencia-img fadeUp" data-animar>
       <?php include 'img/svg/solucoes/palacio_woman.php'; ?>
     </div>
 
-    <div class="transferencia-img">
+    <div class="transferencia-img fadeUp" data-animar>
       <?php include 'img/svg/solucoes/phone_woman.php'; ?>
     </div>
 
@@ -227,7 +227,7 @@ $botao = get_sub_field('botao');
     $botao = get_sub_field('botao');
     ?>
 
-    <div class="transferencia-txt">
+    <div class="transferencia-txt fadeUp" data-animar>
       <h2><?=$titulo?></h2>
       <?=$texto?>
       <a class="btn-cta lighter" href="#"><?=$botao?></a>
@@ -249,10 +249,10 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 <section class="como-receber">
   <div class="container">
-    <h2><?=$titulo?></h2>
+    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
 
     <div class="item-with-svg-wrapper">
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <div>
           <h4><?=$explicacao_1['subtitulo']?></h4>
           <p><?=$explicacao_1['texto']?></p>
@@ -260,7 +260,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
         <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_1['botao']?></a>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <div>
           <h4><?=$explicacao_2['subtitulo']?></h4>
           <p><?=$explicacao_2['texto']?></p>
@@ -268,7 +268,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
         <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_2['botao']?></a>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <div>
           <h4><?=$explicacao_3['subtitulo']?></h4>
           <p><?=$explicacao_3['texto']?></p>
@@ -299,22 +299,22 @@ $explicacao_4 = get_sub_field('explicacao_4');
     <?=$texto?>
 
     <div class="item-with-svg-wrapper">
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/provedores_1.svg" />
         <p><?=$explicacao_1?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/provedores_2.svg" />
         <p><?=$explicacao_2?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/provedores_3.svg" />
         <p><?=$explicacao_3?></p>
       </div>
 
-      <div class="item-with-svg">
+      <div class="item-with-svg fadeUp" data-animar>
         <img src="<?=get_template_directory_URI()?>/img/src/provedores_4.svg" />
         <p><?=$explicacao_4?></p>
       </div>

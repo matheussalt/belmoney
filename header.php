@@ -55,7 +55,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <header class="header">
+  <header class="header fadeDown" data-animar>
     <nav>
       <a href="<?=site_url()?>" class="logo-header">
         <img src="<?=get_template_directory_URI()?>/img/src/logo.svg" alt="Logotipo Belmoney" />
