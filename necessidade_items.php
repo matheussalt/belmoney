@@ -7,7 +7,7 @@ $necessidade_3 = get_sub_field('necessidade_3');
 $necessidade_4 = get_sub_field('necessidade_4');
 ?>
 
-<li class="necessidade-item fadeUp" data-animar>
+<li class="necessidade-item">
   <div class="necessidade-img">
     <?php include 'img/svg/home/necessidade_envio.php'; ?>
   </div>
@@ -17,7 +17,7 @@ $necessidade_4 = get_sub_field('necessidade_4');
   </div>
 </li>
 
-<li class="necessidade-item fadeUp" data-animar>
+<li class="necessidade-item">
   <div class="necessidade-img">
     <?php include 'img/svg/home/necessidade_compre.php'; ?>
   </div>
@@ -27,7 +27,7 @@ $necessidade_4 = get_sub_field('necessidade_4');
   </div>
 </li>
 
-<li class="necessidade-item fadeUp" data-animar>
+<li class="necessidade-item">
   <div class="necessidade-img">
     <?php include 'img/svg/home/necessidade_utilize.php'; ?>
   </div>
@@ -37,7 +37,7 @@ $necessidade_4 = get_sub_field('necessidade_4');
   </div>
 </li>
 
-<li class="necessidade-item fadeUp" data-animar>
+<li class="necessidade-item">
   <div class="necessidade-img">
     <?php include 'img/svg/home/necessidade_pague.php'; ?>
   </div>

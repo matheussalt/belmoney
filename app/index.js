@@ -4,7 +4,7 @@ import openMenu from './js/openMenu';
 import togglePaises from './js/togglePaises';
 import nomeTrigger from './js/nomeTrigger';
 import carrossel from './js/carrossel';
-import { animationHome } from './js/initScrollAnimations';
+import './js/scrollAnimation';
 import './js/modernizr';
 
 openMenu('.menu-hamb', '.header-wrapper');

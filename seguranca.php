@@ -43,23 +43,25 @@ $explicacao_3 = get_sub_field('explicacao_3');
 ?>
 
 <section class="seguranca-tecnologias">
+  <div class="box-animation lightBlue"></div>
+
   <div class="container">
-    <h2 class="fadeUp" data-animar><?=$titulo?></h2>
+    <h2><?=$titulo?></h2>
 
     <div class="seguranca-tecnologias-wrapper">
-      <div class="seguranca-tecnologia-item fadeUp" data-animar>
+      <div class="seguranca-tecnologia-item">
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_1.svg" alt="<?=$explicacao_1['subtitulo']?>" />
         <h4><?=$explicacao_1['subtitulo']?></h4>
         <p><?=$explicacao_1['texto']?></p>
       </div>
 
-      <div class="seguranca-tecnologia-item fadeUp" data-animar>
+      <div class="seguranca-tecnologia-item">
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_2.svg" alt="<?=$explicacao_2['subtitulo']?>" />
         <h4><?=$explicacao_2['subtitulo']?></h4>
         <p><?=$explicacao_2['texto']?></p>
       </div>
 
-      <div class="seguranca-tecnologia-item fadeUp" data-animar>
+      <div class="seguranca-tecnologia-item">
         <img src="<?=get_template_directory_URI()?>/img/src/tecnologia_3.svg" alt="<?=$explicacao_3['subtitulo']?>" />
         <h4><?=$explicacao_3['subtitulo']?></h4>
         <p><?=$explicacao_3['texto']?></p>

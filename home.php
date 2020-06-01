@@ -29,9 +29,17 @@ $frase_2 = get_sub_field('frase_2');
       </div>
 
       <div class="banner-frases" data-animar>
-        <span><?=$frase_1?></span>
+        <div>
+          <img class="banner-wave-light" src="<?=get_template_directory_URI()?>/img/src/100.svg" />
 
-        <span><?=$frase_2?></span>
+          <span><?=$frase_1?></span>
+        </div>
+
+        <div>
+          <img class="banner-wave-light" src="<?=get_template_directory_URI()?>/img/src/confianca.svg" />
+
+          <span><?=$frase_2?></span>
+        </div>
       </div>
 
       <?php include 'img/svg/home/mouse_vector.php'; ?>
@@ -60,11 +68,11 @@ $texto = get_sub_field('texto');
 
 <section class="como">
   <div class="container">
-    <div class="como-img fadeRight" data-animar>
+    <div class="como-img">
       <?php include 'img/svg/home/notebook_guys_vector.php'; ?>
     </div>
 
-    <div class="como-txt fadeLeft" data-animar>
+    <div class="como-txt">
       <h2><?=$titulo?></h2>
 
       <p><?=$texto?></p>
@@ -87,15 +95,17 @@ $botao = get_sub_field('botao');
 ?>
 
 <section class="necessidade">
+  <div class="box-animation blue"></div>
+
   <div class="container">
-    <h2 class="fadeRight" data-animar><?=$titulo?></h2>
+    <h2><?=$titulo?></h2>
 
     <div class="necessidade-wrapper">
-      <div class="necessidade-txt fadeLeft" data-animar>
+      <div class="necessidade-txt">
         <?=$texto?>
       </div>
 
-      <a class="btn-cta lighter fadeLeft" data-animar href="<?=site_url()?>/">
+      <a class="btn-cta lighter" href="<?=site_url()?>/">
         <span><?=$botao?></span>
       </a>
     </div>
@@ -118,19 +128,19 @@ $texto_2 = get_sub_field('texto_2');
 
 <section class="compromisso">
   <div class="container">
-    <div class="compromisso-txt fadeRight" data-animar>
+    <div class="compromisso-txt">
       <?=$texto_1?>
     </div>
 
-    <div class="compromisso-img fadeLeft" data-animar>
+    <div class="compromisso-img">
       <?php include 'img/svg/home/protection_guys.php'; ?>
     </div>
 
-    <div class="compromisso-img fadeRight" data-animar>
+    <div class="compromisso-img">
       <?php include 'img/svg/home/world_guys.php'; ?>
     </div>
 
-    <div class="compromisso-txt fadeLeft" data-animar>
+    <div class="compromisso-txt">
       <?=$texto_2?>
     </div>
   </div>
@@ -146,12 +156,14 @@ $texto = get_sub_field('texto');
 ?>
 
 <section class="economia">
+  <div class="box-animation blue"></div>
+
   <div class="container">
-    <div class="economia-txt fadeUp" data-animar>
+    <div class="economia-txt">
       <?=$texto?>
     </div>
 
-    <div class="economia-img fadeUp" data-animar>
+    <div class="economia-img">
 
       <?php include 'img/svg/home/economia_guys.php'; ?>
     </div>
