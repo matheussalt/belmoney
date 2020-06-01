@@ -124,6 +124,8 @@ $botao = get_sub_field('botao');
 
 $texto_1 = get_sub_field('texto_1');
 $texto_2 = get_sub_field('texto_2');
+$regulamentado = get_sub_field('regulamentado');
+$autorizado = get_sub_field('autorizado');
 ?>
 
 <section class="compromisso">
@@ -142,6 +144,25 @@ $texto_2 = get_sub_field('texto_2');
 
     <div class="compromisso-txt">
       <?=$texto_2?>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="regulamentado">
+      <p><?=$regulamentado?></p>
+
+      <div>
+        <img src="<?=get_template_directory_URI()?>/img/src/regulamentado.png" alt="Regulamentado" />
+      </div>
+    </div>
+
+    <div class="autorizado">
+      <p><?=$autorizado?></p>
+
+      <div>
+        <img src="<?=get_template_directory_URI()?>/img/src/autorizado_1.png" alt="Autorizado" />
+        <img src="<?=get_template_directory_URI()?>/img/src/autorizado_2.png" alt="Autorizado" />
+      </div>
     </div>
   </div>
 </section>
