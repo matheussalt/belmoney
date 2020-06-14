@@ -1,10 +1,13 @@
 .como {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   padding: 64px 0;
+  display: flex;
+  align-items: center;
   background-color: $blue;
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .container {
     display: flex;

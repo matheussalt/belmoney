@@ -59,33 +59,6 @@ function setScrollAnimation(targets = [], sceneObject, pin) {
 setScrollAnimation(
   [
     {
-      target: '.como-txt',
-      duration: 1,
-      animation: {
-        transform: 'translate3d(60px, 0, 0)',
-        opacity: 0,
-      },
-    },
-    {
-      target: '.como-img',
-      duration: 1,
-      animation: {
-        transform: 'translate3d(-60px, 0, 0)',
-        opacity: 0,
-      },
-    },
-  ],
-  {
-    triggerElement: '.como',
-    triggerHook: 'onLeave',
-    duration: '100%',
-  },
-  '.como'
-);
-
-setScrollAnimation(
-  [
-    {
       target: '.necessidade .box-animation',
       duration: 0.5,
       animation: {
@@ -96,7 +69,7 @@ setScrollAnimation(
       target: '.necessidade h2',
       duration: 0.5,
       animation: {
-        transform: 'translate3d(-60px, 0, 0)',
+        transform: 'translate3d(0, 150%, 0)',
         opacity: 0,
       },
     },
@@ -104,7 +77,7 @@ setScrollAnimation(
       target: '.necessidade-txt p',
       duration: 0.5,
       animation: {
-        transform: 'translate3d(-60px, 0, 0)',
+        transform: 'translate3d(0, 150%, 0)',
         opacity: 0,
       },
     },
@@ -112,12 +85,36 @@ setScrollAnimation(
       target: '.necessidade-wrapper .btn-cta',
       duration: 0.5,
       animation: {
-        transform: 'translate3d(60px, 0, 0)',
+        transform: 'translate3d(0, 150%, 0)',
         opacity: 0,
       },
     },
     {
-      target: '.necessidade-item',
+      target: '.necessidade-item:nth-of-type(1)',
+      duration: 0.5,
+      animation: {
+        transform: 'translate3d(0, 30px, 0)',
+        opacity: 0,
+      },
+    },
+    {
+      target: '.necessidade-item:nth-of-type(2)',
+      duration: 0.5,
+      animation: {
+        transform: 'translate3d(0, 30px, 0)',
+        opacity: 0,
+      },
+    },
+    {
+      target: '.necessidade-item:nth-of-type(3)',
+      duration: 0.5,
+      animation: {
+        transform: 'translate3d(0, 30px, 0)',
+        opacity: 0,
+      },
+    },
+    {
+      target: '.necessidade-item:nth-of-type(4)',
       duration: 0.5,
       animation: {
         transform: 'translate3d(0, 30px, 0)',
@@ -136,17 +133,10 @@ setScrollAnimation(
 setScrollAnimation(
   [
     {
-      target: '.economia .box-animation',
-      duration: 0.3,
-      animation: {
-        width: '100%',
-      },
-    },
-    {
       target: '.economia-txt',
       duration: 0.5,
       animation: {
-        transform: 'translate3d(60px, 0, 0)',
+        transform: 'translate3d(0, 100%, 0)',
         opacity: 0,
       },
     },
@@ -154,7 +144,7 @@ setScrollAnimation(
       target: '.economia-img',
       duration: 0.5,
       animation: {
-        transform: 'translate3d(60px, 0, 0)',
+        transform: 'translate3d(0, 50%, 0)',
         opacity: 0,
       },
     },
@@ -162,7 +152,7 @@ setScrollAnimation(
   {
     triggerElement: '.economia',
     triggerHook: 0.1,
-    duration: '200%',
+    duration: '100%',
   },
   '.economia'
 );
@@ -340,6 +330,33 @@ if (window.innerWidth > 768) {
   setScrollAnimation(
     [
       {
+        target: '.como-img',
+        duration: 1,
+        animation: {
+          transform: 'translate3d(-60px, 0, 0)',
+          opacity: 0,
+        },
+      },
+      {
+        target: '.como-txt',
+        duration: 1,
+        animation: {
+          transform: 'translate3d(0, 100%, 0)',
+          opacity: 0,
+        },
+      },
+    ],
+    {
+      triggerElement: '.como',
+      triggerHook: 'onLeave',
+      duration: '100%',
+    },
+    '.como'
+  );
+
+  setScrollAnimation(
+    [
+      {
         target: '.phone-back',
         duration: 0.3,
         animation: {
@@ -465,6 +482,33 @@ if (window.innerWidth > 768) {
     '.para-provedores'
   );
 } else {
+  setScrollAnimation(
+    [
+      {
+        target: '.como-txt',
+        duration: 1,
+        animation: {
+          transform: 'translate3d(60px, 0, 0)',
+          opacity: 0,
+        },
+      },
+      {
+        target: '.como-img',
+        duration: 1,
+        animation: {
+          transform: 'translate3d(-60px, 0, 0)',
+          opacity: 0,
+        },
+      },
+    ],
+    {
+      triggerElement: '.como',
+      triggerHook: 'onLeave',
+      duration: '100%',
+    },
+    '.como'
+  );
+
   setScrollAnimation(
     [
       {

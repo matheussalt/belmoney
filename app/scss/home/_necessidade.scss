@@ -3,12 +3,21 @@
   width: 100%;
   background-color: #fff;
   padding: 64px 0 0;
+  z-index: 1;
 
   .container h2 {
     max-width: 460px;
     color: $blue;
     font-size: 32px;
     letter-spacing: 0.25rem;
+  }
+
+  .banner-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    z-index: -1;
   }
 }
 
@@ -52,6 +61,10 @@
       max-width: 500px;
       font-size: 54px;
       line-height: 62px;
+    }
+
+    .banner-wave {
+      width: 100%;
     }
   }
 }

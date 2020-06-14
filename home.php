@@ -114,6 +114,8 @@ $botao = get_sub_field('botao');
       <?php include 'necessidade_items.php'; ?>
     </ul>
   </div>
+
+  <img class="banner-wave" src="<?=get_template_directory_URI()?>/img/src/wave_grey.svg" alt="Vetor decorativo" />
 </section>
 
 <?php endwhile; ?>
@@ -126,6 +128,7 @@ $texto_1 = get_sub_field('texto_1');
 $texto_2 = get_sub_field('texto_2');
 $regulamentado = get_sub_field('regulamentado');
 $autorizado = get_sub_field('autorizado');
+$membro = get_sub_field('membro');
 ?>
 
 <section class="compromisso">
@@ -164,6 +167,14 @@ $autorizado = get_sub_field('autorizado');
         <img src="<?=get_template_directory_URI()?>/img/src/autorizado_2.png" alt="Autorizado" />
       </div>
     </div>
+
+    <div class="regulamentado">
+      <p><?=$membro?></p>
+
+      <div>
+        <img src="<?=get_template_directory_URI()?>/img/src/fintech.png" alt="Fintech" />
+      </div>
+    </div>
   </div>
 </section>
 
@@ -189,6 +200,8 @@ $texto = get_sub_field('texto');
       <?php include 'img/svg/home/economia_guys.php'; ?>
     </div>
   </div>
+
+  <img class="banner-wave" src="<?=get_template_directory_URI()?>/img/src/wave_grey.svg" alt="Vetor decorativo" />
 </section>
 
 <?php endwhile; ?>
