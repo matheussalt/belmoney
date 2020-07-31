@@ -22,7 +22,7 @@ get_header(); ?>
 
 <section class="contato">
   <div class="container">
-    <? echo do_shortcode('[contact-form-7 id="266" title="Contato"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="266" title="Contato"]'); ?>
   </div>
 </section>
 
@@ -31,7 +31,7 @@ get_header(); ?>
     <h2><?=the_field('perguntas_frequentes')?></h2>
 
     <div class="perguntas-wrapper">
-      <? query_posts( array( 'post_type' => 'perguntas_frequentes','posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+      <?php query_posts( array( 'post_type' => 'perguntas_frequentes','posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 

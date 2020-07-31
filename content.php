@@ -10,12 +10,12 @@
  */
 ?>
 
-<? if (is_single()) { ?>
+<?php if (is_single()) { ?>
 	
     //Codigo dentro do post
     
-<? } else { ?>
+<?php } else { ?>
 
 	//Codigo fora do post
     
-<? } ?>
+<?php } ?>

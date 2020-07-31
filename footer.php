@@ -13,7 +13,7 @@
 <div class="newsletter">
   <div class="container">
     <h4>Newsletter</h4>
-    <? echo do_shortcode('[contact-form-7 id="58" title="Newsletter"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="58" title="Newsletter"]'); ?>
   </div>
 </div>
 

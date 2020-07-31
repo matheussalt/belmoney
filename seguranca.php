@@ -117,7 +117,7 @@ $botao = get_sub_field('botao');
     </div>
 
     <div class="termos">
-      <? query_posts( array( 'post_type' => 'termos','posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+      <?php query_posts( array( 'post_type' => 'termos','posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 

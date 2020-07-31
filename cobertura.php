@@ -56,7 +56,7 @@ $oceania = get_sub_field('oceania');
         </button>
 
         <div class="pais-wrapper">
-          <? query_posts( array( 'post_type' => 'paises', 'category_name' => 'africa', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+          <?php query_posts( array( 'post_type' => 'paises', 'category_name' => 'africa', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
 
@@ -77,7 +77,7 @@ $oceania = get_sub_field('oceania');
         </button>
 
         <div class="pais-wrapper">
-          <? query_posts( array( 'post_type' => 'paises', 'category_name' => 'america', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+          <?php query_posts( array( 'post_type' => 'paises', 'category_name' => 'america', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
 
@@ -98,7 +98,7 @@ $oceania = get_sub_field('oceania');
         </button>
 
         <div class="pais-wrapper">
-          <? query_posts( array( 'post_type' => 'paises', 'category_name' => 'asia', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+          <?php query_posts( array( 'post_type' => 'paises', 'category_name' => 'asia', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
 
@@ -119,7 +119,7 @@ $oceania = get_sub_field('oceania');
         </button>
 
         <div class="pais-wrapper">
-          <? query_posts( array( 'post_type' => 'paises', 'category_name' => 'europa', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+          <?php query_posts( array( 'post_type' => 'paises', 'category_name' => 'europa', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
 
@@ -140,7 +140,7 @@ $oceania = get_sub_field('oceania');
         </button>
 
         <div class="pais-wrapper">
-          <? query_posts( array( 'post_type' => 'paises', 'category_name' => 'oceania', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
+          <?php query_posts( array( 'post_type' => 'paises', 'category_name' => 'oceania', 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' ) );  ?>
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
 
