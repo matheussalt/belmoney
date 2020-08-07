@@ -71,10 +71,10 @@
               src="<?=get_template_directory_URI()?>/img/src/dropdown.svg" /></span>
 
           <ul>
-            <li><a href="<?=site_url()?>/">EN</a></li>
-            <li><a href="<?=site_url()?>/pt">PT</a></li>
-            <li><a href="<?=site_url()?>/es">ES</a></li>
-            <li><a href="<?=site_url()?>/fr">FR</a></li>
+            <li><a href="/">EN</a></li>
+            <li><a href="/pt">PT</a></li>
+            <li><a href="/es">ES</a></li>
+            <li><a href="/fr">FR</a></li>
           </ul>
         </div>
 
