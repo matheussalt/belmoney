@@ -67,7 +67,8 @@
 
       <div class="header-buttons">
         <div class="choose-language">
-          <span class="current">PT <img src="<?=get_template_directory_URI()?>/img/src/dropdown.svg" /></span>
+          <span class="current"><span>EN</span> <img
+              src="<?=get_template_directory_URI()?>/img/src/dropdown.svg" /></span>
 
           <ul>
             <li><a href="<?=site_url()?>/">EN</a></li>
