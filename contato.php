@@ -67,7 +67,10 @@ $botao = get_sub_field('botao');
       <div class="atendimento-txt">
         <strong><?=$titulo?></strong>
         <p><?=$subtitulo?></p>
-        <?=$contato?>
+        <!-- <?=$contato?> -->
+        <h3>+32 2 537 65 03</h3>
+        <h4>E-mail</h4>
+        <p>info@belmoney.be</p>
         <a href="#" class="btn-cta lighter"><?=$botao?></a>
       </div>
 
