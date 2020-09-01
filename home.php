@@ -14,6 +14,7 @@ get_header(); ?>
 $titulo_1 = get_sub_field('titulo_1');
 $titulo_2 = get_sub_field('titulo_2');
 $botao = get_sub_field('botao');
+$botao_url = get_sub_field('botao_url');
 $frase_1 = get_sub_field('frase_1');
 $frase_2 = get_sub_field('frase_2');
 ?>
@@ -23,7 +24,7 @@ $frase_2 = get_sub_field('frase_2');
     <div class="banner-wrapper">
       <div class="banner-txt" data-animar>
         <h1><?=$titulo_1?> <strong><?=$titulo_2?></strong></h1>
-        <a href="#" class="btn-cta">
+        <a href="<?=$botao_url?>" class="btn-cta">
           <span><?=$botao?></span>
         </a>
       </div>
@@ -173,6 +174,7 @@ $membro = get_sub_field('membro');
 
       <div>
         <img src="<?=get_template_directory_URI()?>/img/src/fintech.png" alt="Fintech" />
+        <img src="<?=get_template_directory_URI()?>/img/src/paybelgium.png" alt="Fintech" />
       </div>
     </div>
   </div>

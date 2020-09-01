@@ -85,12 +85,17 @@
       flex-direction: row;
       justify-content: space-between;
 
+      h4 {
+        margin-bottom: 40px;
+      }
+
       .wpcf7 {
         flex: 1;
       }
 
       form {
         flex-direction: row;
+        align-items: flex-start;
 
         .form-wrapper {
           width: 100%;
@@ -128,7 +133,7 @@
 
         input[type='submit'] {
           padding: 8px 32px;
-          margin-top: 32px;
+          margin-top: 16px;
           display: inline-block;
           background-color: $darkBlue;
           border-radius: 32px;
