@@ -31,13 +31,13 @@ $frase_2 = get_sub_field('frase_2');
 
       <div class="banner-frases" data-animar>
         <div>
-          <img class="banner-wave-light" src="<?=get_template_directory_URI()?>/img/src/100.svg" />
+          <img src="<?=get_template_directory_URI()?>/img/src/100.svg" />
 
           <span><?=$frase_1?></span>
         </div>
 
         <div>
-          <img class="banner-wave-light" src="<?=get_template_directory_URI()?>/img/src/confianca.svg" />
+          <img src="<?=get_template_directory_URI()?>/img/src/confianca.svg" />
 
           <span><?=$frase_2?></span>
         </div>
@@ -93,6 +93,7 @@ $texto = get_sub_field('texto');
 $titulo = get_sub_field('titulo');
 $texto = get_sub_field('texto');
 $botao = get_sub_field('botao');
+$link = get_sub_field('link');
 ?>
 
 <section class="necessidade">
@@ -106,7 +107,7 @@ $botao = get_sub_field('botao');
         <?=$texto?>
       </div>
 
-      <a class="btn-cta lighter" href="<?=site_url()?>/">
+      <a class="btn-cta lighter" href="<?=$link?>">
         <span><?=$botao?></span>
       </a>
     </div>

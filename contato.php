@@ -76,8 +76,8 @@ $botao = get_sub_field('botao');
 
       <div class="atendimento-maps">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.8931072009!2d4.305350604248187!3d50.854954091143945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelas%2C%20B%C3%A9lgica!5e0!3m2!1spt-BR!2sbr!4v1589739821412!5m2!1spt-BR!2sbr"
-          frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.5883840636766!2d4.333483815745514!3d50.83878777953083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c5df6f9d4bcd%3A0x7bf6d01c347e878d!2sBT%20Money%20Transfers%20%26%20Exchange%20-%20BARA%20(Belmoney%2C%20Western%20Union%2C%20RIA)!5e0!3m2!1spt-BR!2sbr!4v1599599435611!5m2!1spt-BR!2sbr"
+          frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
       </div>
     </div>
 

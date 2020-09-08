@@ -176,6 +176,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
 
 $texto = get_sub_field('texto');
 $botao = get_sub_field('botao');
+$link = get_sub_field('link');
 ?>
 
 <section class="happ" style="background-image: url('<?=get_template_directory_URI()?>/img/src/happ_background.svg');">
@@ -184,7 +185,7 @@ $botao = get_sub_field('botao');
       <img src="<?=get_template_directory_URI()?>/img/src/logo_happ.svg" alt="Logotipo Happ" />
       <?=$texto?>
 
-      <a class="btn-cta lighter" href="#" target="_blank"><?=$botao?></a>
+      <a class="btn-cta lighter" href="<?=$link?>" target="_blank"><?=$botao?></a>
     </div>
 
     <div class="happ-img">
@@ -265,7 +266,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
           <h4><?=$explicacao_1['subtitulo']?></h4>
           <p><?=$explicacao_1['texto']?></p>
         </div>
-        <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_1['botao']?></a>
+        <a class="btn-cta lighter" href="<?=$explicacao_1['link']?>"><?=$explicacao_1['botao']?></a>
       </div>
 
       <div class="item-with-svg">
@@ -273,7 +274,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
           <h4><?=$explicacao_2['subtitulo']?></h4>
           <p><?=$explicacao_2['texto']?></p>
         </div>
-        <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_2['botao']?></a>
+        <a class="btn-cta lighter" href="<?=$explicacao_2['link']?>"><?=$explicacao_2['botao']?></a>
       </div>
 
       <div class="item-with-svg">
@@ -281,7 +282,7 @@ $explicacao_3 = get_sub_field('explicacao_3');
           <h4><?=$explicacao_3['subtitulo']?></h4>
           <p><?=$explicacao_3['texto']?></p>
         </div>
-        <a class="btn-cta lighter" href="<?=site_url()?>/"><?=$explicacao_3['botao']?></a>
+        <a class="btn-cta lighter" href="<?=$explicacao_3['link']?>"><?=$explicacao_3['botao']?></a>
       </div>
     </div>
   </div>

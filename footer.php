@@ -23,7 +23,7 @@
       <img class="logo-footer" src="<?=get_template_directory_URI()?>/img/src/logo.svg" alt="Logotipo Belmoney" />
 
       <ul class="footer-social">
-        <li>
+        <!-- <li>
           <a href="https://facebook.com" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#facebook"></use>
@@ -51,6 +51,14 @@
           <a href="https://instagram.com" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+        </li> -->
+
+        <li>
+          <a href="https://www.linkedin.com/company/belmoney.be/about/" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#linkedin"></use>
             </svg>
           </a>
         </li>
