@@ -198,6 +198,25 @@ $link = get_sub_field('link');
 <?php endwhile; ?>
 <?php endif; ?>
 
+<script>
+const sitePrefix = baseURL.split('/');
+const phoneBack = document.querySelector('.phone-back')
+const phoneFront = document.querySelector('.phone-front')
+
+if (sitePrefix[sitePrefix.length - 1] === 'fr') {
+  phoneBack.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_back_fr.png');
+  phoneFront.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_front_fr.png');
+} else if (sitePrefix[sitePrefix.length - 1] === 'pt') {
+  phoneBack.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_back.png');
+  phoneFront.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_front.png');
+} else if (sitePrefix[sitePrefix.length - 1] === 'es') {
+  phoneBack.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_back_es.png');
+  phoneFront.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_front_es.png');
+} else {
+  phoneBack.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_back_en.png');
+  phoneFront.setAttribute('src', '<?=get_template_directory_URI()?>/img/src/phone_front_en.png');
+}
+</script>
 
 <section class="transferencia">
   <div class="container">
@@ -207,12 +226,13 @@ $link = get_sub_field('link');
     $titulo = get_sub_field('titulo');
     $texto = get_sub_field('texto');
     $botao = get_sub_field('botao');
+    $url = get_sub_field('url');
     ?>
 
     <div class="transferencia-txt fadeUp" data-animar>
       <h2><?=$titulo?></h2>
       <?=$texto?>
-      <a class="btn-cta lighter" href="#"><?=$botao?></a>
+      <a class="btn-cta lighter" href="<?=$url?>"><?=$botao?></a>
     </div>
 
     <?php endwhile; ?>
@@ -232,12 +252,13 @@ $link = get_sub_field('link');
     $titulo = get_sub_field('titulo');
     $texto = get_sub_field('texto');
     $botao = get_sub_field('botao');
+    $url = get_sub_field('url');
     ?>
 
     <div class="transferencia-txt fadeUp" data-animar>
       <h2><?=$titulo?></h2>
       <?=$texto?>
-      <a class="btn-cta lighter" href="#"><?=$botao?></a>
+      <a class="btn-cta lighter" href="<?=$url?>"><?=$botao?></a>
     </div>
 
     <?php endwhile; ?>

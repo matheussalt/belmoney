@@ -238,11 +238,12 @@ $texto = get_sub_field('texto');
       $titulo = get_sub_field('titulo');
       $texto = get_sub_field('texto');
       $botao = get_sub_field('botao');
+      $url = get_sub_field('url');
       ?>
 
       <h2><?=$titulo?></h2>
       <?=$texto?>
-      <a class="btn-cta lighter" href="<?=site_url()?>/contato"><?=$botao?></a>
+      <a class="btn-cta lighter" href="<?=$url?>"><?=$botao?></a>
 
       <?php endwhile; ?>
       <?php endif; ?>
