@@ -134,7 +134,7 @@ $texto = get_sub_field('texto');
         $position = 0;
         $isFirst = true; 
         ?>
-        <?php query_posts( array( 'post_type' => 'equipe', 'posts_per_page' => -1 ) );  ?>
+        <?php query_posts( array( 'post_type' => 'depoimentos', 'posts_per_page' => -1 ) );  ?>
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -168,7 +168,7 @@ $texto = get_sub_field('texto');
       $position = 0;
       $isFirst = true; 
       ?>
-      <?php query_posts( array( 'post_type' => 'equipe', 'posts_per_page' => -1 ) );  ?>
+      <?php query_posts( array( 'post_type' => 'depoimentos', 'posts_per_page' => -1 ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
